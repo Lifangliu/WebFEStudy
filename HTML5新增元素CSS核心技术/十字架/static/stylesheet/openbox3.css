@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 314px;
+    height: 314px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*left top 减去自身一半*/
+    margin-left: -157px;
+    margin-top: -157px;
+}
+
+.row {
+    overflow: hidden;
+    /*清除浮动*/
+    margin-top: 4px;
+}
+
+#first {
+    /*去掉第一行margin-top*/
+    margin: 0;
+}
+
+.box-vacancy {
+    margin-left: 106px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    opacity: 0.9;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+/*box背景图*/
+
+.box-doraemon {
+    background: url(../images/doraemon3.png) no-repeat 2px center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+/*box颜色定义*/
+
+.box-primary {
+    background-color: #337ab7;
+}
+
+.box-default {
+    background-color: #fff;
+}
+
+.box-success {
+    background-color: #5cb85c;
+}
+
+.box-info {
+    background-color: #5bc0de;
+}
+
+.box-danger {
+    background-color: #d9534f;
+}

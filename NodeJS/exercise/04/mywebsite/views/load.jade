@@ -1,0 +1,24 @@
+each article in articles.data
+	li
+		a(href='javascript:void(0);')
+			if article.show_type == '0'
+				img(src='/' + article.thumbnail1 )
+				div.probable
+					span.title= article.title
+					p.desc= article.intro
+				i.time= moment(article.publishtime).format('YYYY-MM-DD HH:mm:ss')
+				if article.source_color == 'redbg'
+					b.source.redbg= article.source
+				else
+					b.source= article.source
+			else
+				span.title1= article.title
+				p
+					img(src='/' + article.thumbnail1 )
+					img(src='/' + article.thumbnail2 )
+					img(src='/' + article.thumbnail3 )
+				i.time.lf0= moment(article.publishtime).format('YYYY-MM-DD HH:mm:ss')
+				if article.source_color == 'redbg'
+					b.source.redbg= article.source
+				else
+					b.source= article.source

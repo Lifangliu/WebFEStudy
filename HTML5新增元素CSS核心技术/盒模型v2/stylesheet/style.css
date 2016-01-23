@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 20px 0 0 20px;
+}
+
+.demo {
+    width: 800px;
+    height: 350px;
+    background: antiquewhite;
+    margin: 5px 0 0 20px;
+}
+
+.mydiv1 {
+    background: #FBD189;
+    width: 240px;
+    height: 100px;
+}
+
+.mybox1 {
+    margin: 10px 0 10px 20px;
+    padding: 10px;
+    width: 240px;
+    height: 100px;
+    border: 5px solid red;
+    background-color: blue;
+}
+
+.outside {
+    width: 270px;
+    height: 130px;
+}
+
+.mydiv2 {
+    background: coral;
+    width: 240px;
+    height: 100px;
+}
+
+.mybox2 {
+    margin: 10px 0 10px 20px;
+    padding: 10px;
+    width: 240px;
+    height: 100px;
+    border: 5px solid deepskyblue;
+    background-color: chartreuse;
+}
+
+.con1 {
+    display: -webkit-flex;
+    width: 600px;
+    height: 100px;
+    margin: 10px 0 10px 20px;
+    background-color: beige;
+}
+
+.first1 {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: orange;
+}
+
+.second1 {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: aquamarine;
+}
+
+.three1 {
+    height: 100px;
+    -webkit-flex: 1;
+    background-color: coral;
+}
+
+.con2 {
+    margin: 10px 0 10px 20px;
+    padding: 10px;
+    width: 240px;
+    height: 300px;
+    border: 5px solid deepskyblue;
+    background-color: chartreuse;
+    -webkit-flex-direction: column;
+    -webkit-flex-orient: green;
+}
+
+.first3 {
+    height: 100px;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+    background-color: orange;
+}
+
+.second3 {
+    height: 100px;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+    background-color: aquamarine;
+}
+
+.three3 {
+    height: 100px;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+    background-color: coral;
+}
+
+.col {
+    margin: 10px 0 10px 20px;
+    -webkit-column-count: 4;
+    -webkit-column-rule-style: dotted;
+}
+
+.col img {
+    width: 100%;
+}
+
+.center {
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

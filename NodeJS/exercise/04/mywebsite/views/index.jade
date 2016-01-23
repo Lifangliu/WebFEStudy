@@ -1,0 +1,99 @@
+doctype html
+html(lang="zh_CN")
+	head
+		title 百度新闻
+		meta(charset='utf-8')
+		meta(name="viewport", content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+		link(rel='stylesheet', href='/stylesheets/news.css')
+	body
+		div.content
+			div.header
+				a.bdhome(href="javascript:void(0);")
+				a.username(href="javascript:void(0);")
+				a.search(href="javascript:void(0);")
+				a.subscribe(href="javascript:void(0);")
+			div.main
+				div.navigator
+					div.divider
+					div.nav-content
+						ul
+							each type in types
+								//判断如是当前浏览分类，增加class=cur
+								//if...else...分别写了两份，请问老师应该如果简化？
+								if type.id == curTypeId
+									if type.width == 2
+										li.cur.double
+											a(href='?t='+type.id)= type.name
+									else
+										li.cur
+											a(href='?t='+type.id)= type.name
+								else
+									if type.width == 2
+										li.double
+											a(href='?t='+type.id)= type.name
+									else
+										li
+											a(href='?t='+type.id)= type.name
+				if typeStartId == curTypeId
+					div.carousel
+						ul
+							each article in carousel
+								li
+									a(href='javascript:void(0);')
+										img(src='/' + article.thumbnail1 )
+										h4= article.title
+						ol
+							each article in carousel
+								li
+									a(href='javascript:void(0);')
+					div.hotword
+						span 热点
+						ul
+							each article in hotword
+								li
+									a(href='javascript:void(0);')
+										strong= article.title
+										b
+				div.news-list
+					ul
+						each article in articles.data
+							li
+								a(href='javascript:void(0);')
+									if article.show_type == '0'
+										img(src='/' + article.thumbnail1 )
+										div.probable
+											span.title= article.title
+											p.desc= article.intro
+										i.time= moment(article.publishtime).format('YYYY-MM-DD HH:mm:ss')
+										if article.source_color == 'redbg'
+											b.source.redbg= article.source
+										else
+											b.source= article.source
+									else
+										span.title1= article.title
+										p
+											img(src='/' + article.thumbnail1 )
+											img(src='/' + article.thumbnail2 )
+											img(src='/' + article.thumbnail3 )
+										i.time.lf0= moment(article.publishtime).format('YYYY-MM-DD HH:mm:ss')
+										if article.source_color == 'redbg'
+											b.source.redbg= article.source
+										else
+											b.source= article.source
+				button.load-btn(data-pn='1', data-type= curTypeId) 点击加载更多
+			div.footer
+				a(href='javascript:void(0);')
+					span.feedback 意见反馈
+				a(href='javascript:void(0);')
+					span.app-recommend 应用推荐
+				a(href='javascript:void(0);')
+					span.app-download 客户端
+		script(type='text/javascript', src='/javascripts/jquery.min.js')
+		script(type='text/javascript', src='/javascripts/index.js')
+
+
+
+
+
+
+

@@ -1,0 +1,370 @@
+$themeGreen:#35b558;
+html,
+body,
+h1,
+h2,
+a,
+input,
+ul,
+ol,
+li,
+dl,
+dd,
+p,
+button {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial;
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+    font-style: normal;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.w-1000 {
+    width: 1000px;
+}
+
+.f_l {
+    float: left;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+button {
+    border: 0 none;
+}
+
+.green-button {
+    display: inline-block;
+    font-size: 18px;
+    transition-duration: .8s;
+    transform: translateZ(0);
+    transition-property: background;
+    -webkit-transition-duration: .8s;
+    -webkit-transform: translateZ(0);
+    -webkit-transition-property: background;
+}
+
+.greenbtn {
+    @extend .green-button;
+    color: #fff;
+    border-radius: 3px;
+    background: $themeGreen;
+}
+
+.greenbtn2 {
+    @extend .green-button;
+    font-size: 16px;
+    color: $themeGreen;
+    background: #f3fff6;
+    border: 1px solid $themeGreen;
+}
+
+.greenbtn3 {
+    @extend .green-button;
+    color: #fff;
+    border-radius: 3px;
+    background: #7bda95;
+    &:hover {
+        background: $themeGreen;
+        color: #fff;
+    }
+    &:focus {
+        @extend :hover;
+    }
+    &:active {
+        @extend :hover;
+    }
+}
+
+@mixin xinhao-icon-fun ($bgImg) {
+    background: url($bgImg) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.xinhao-icon {
+    @include xinhao-icon-fun("../images/common/one-ji_1731712.png");
+}
+
+.xinhao-icon2 {
+    @include xinhao-icon-fun("../images/common/tow-ji_ec2b553.png");
+}
+
+.xinhao-icon3 {
+    @include xinhao-icon-fun("../images/common/three-ji_b588ab1.png");
+}
+
+.swiper-container {
+    height: 305px;
+    width: 100%;
+}
+
+.swiper-container,
+.swiper-container2 {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+#banner-left,
+#banner-left2,
+#banner-left3,
+#banner-left4 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#banner-right,
+#banner-right2,
+#banner-right3,
+#banner-right4 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+@mixin arrow-fun($bgImg) {
+    background: url($bgImg) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.arrow-right {
+    @include arrow-fun("../images/banner-right_a0bdd7d.png");
+}
+
+.arrow-left {
+    @include arrow-fun("../images/banner-left_fe0df34.png");
+}
+
+.gotop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+    span {
+        cursor: pointer;
+        &.top {
+            display: block;
+            background: url(../images/gotop_d19051b.jpg) 0 0 no-repeat;
+            background-size: 34px 103px;
+            width: 34px;
+            height: 34px;
+            &:hover {
+                background: rgba(0, 0, 0, 0) url(../images/gotop2_3c1a479.jpg) no-repeat scroll 0 0 / 34px 103px;
+            }
+        }
+        &.erwma {
+            position: relative;
+            display: block;
+            background: url(../images/gotop_d19051b.jpg) 0 -34px no-repeat;
+            background-size: 34px 103px;
+            width: 34px;
+            height: 35px;
+            img {
+                width: 126px;
+                height: 159px;
+                position: absolute;
+                z-index: 2100;
+                left: -126px;
+                top: -70px;
+                display: none;
+            }
+            &:hover {
+                background: rgba(0, 0, 0, 0) url(../images/gotop2_3c1a479.jpg) no-repeat scroll 0 -34px / 34px 103px;
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+    div.jk-app {
+        position: relative;
+        display: block;
+        background: #f7f7f7 url(../images/phone-1_b9a83cb.png) center center no-repeat;
+        background-size: 12px 24px;
+        width: 34px;
+        height: 35px;
+        border-bottom: 1px solid #e0e0e0;
+        .appewm {
+            background: url(../images/appewm_72cb766.png) center center no-repeat;
+            background-size: 100%;
+            width: 126px;
+            height: 159px;
+            position: absolute;
+            z-index: 2100;
+            left: -126px;
+            top: -70px;
+            display: none;
+        }
+        &:hover {
+            background: #f7f7f7 url(../images/phone-2_3e87776.png) no-repeat scroll center center / 12px 24px;
+            .appewm {
+                display: block;
+            }
+        }
+    }
+    a.diaocha {
+        display: block;
+        background: url(../images/gotop_d19051b.jpg) 0 -68px no-repeat;
+        background-size: 34px 101px;
+        width: 34px;
+        height: 34px;
+        &:hover {
+            background: rgba(0, 0, 0, 0) url(../images/gotop2_3c1a479.jpg) no-repeat scroll 0 -68px / 34px 101px;
+        }
+    }
+    @mixin qq-ol-fun($bgImg) {
+        position: relative;
+        display: block;
+        background: #f7f7f7 url($bgImg) center center no-repeat;
+        width: 34px;
+        height: 35px;
+        border-top: 1px solid #e0e0e0;
+    }
+    a.qq-online {
+        @include qq-ol-fun("../images/kfu_ca37db8.png");
+        .kefu {
+            position: absolute;
+            padding: 5px;
+            background: #f7f7f7;
+            color: #333;
+            font-size: 12px;
+            text-align: center;
+            width: 180px;
+            left: -190px;
+            display: none;
+            i {
+                height: 20px;
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-left: 10px solid #f7f7f7;
+                border-bottom: 8px solid transparent;
+                position: absolute;
+                right: -10px;
+                top: 12px;
+            }
+        }
+        &:hover {
+            span.kefu {
+                display: block;
+            }
+        }
+    }
+    a.qq-online1 {
+        @include qq-ol-fun("../images/kfu1_3dd1509.png");
+    }
+}
+
+.pewm2 {
+    font-size: 12px;
+    color: #252525;
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 240px;
+    width: 105px;
+    height: 120px;
+    text-align: center;
+    z-index: 2000;
+    .close {
+        position: absolute;
+        top: -5px;
+        right: -13px;
+        z-index: 2200;
+        width: 14px;
+        height: 14px;
+        display: block;
+        background: url(../images/close4_e9b7521.png) center center no-repeat;
+        background-size: 10px auto;
+    }
+}
+
+.pewm3 {
+    @extend .pewm2;
+    bottom: 450px;
+    .close {
+        right: -13px;
+        cursor: pointer;
+    }
+}
+
+.lesson-right-show .free-box button:active,
+.lesson-right-show .free-box button:focus,
+.lesson-right-show .free-box button:hover {
+    background: $themeGreen;
+    color: #fff;
+    border-color: $themeGreen;
+}

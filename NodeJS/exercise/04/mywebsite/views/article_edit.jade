@@ -1,0 +1,78 @@
+extends ./layout
+block content
+  div.col-sm-6.col-md-5.col-xs-12
+    h1.page-header 编辑文章
+    form(method='post', enctype='multipart/form-data')
+      div.form-group
+        label 标题
+        input.form-control.nonull(type='text', name='title', placeholder='标题', value= article.title)
+      div.form-group
+        label 新闻来源
+        input.form-control.nonull(type='text', name='source', placeholder='新闻来源', value= article.source)
+      div.form-group
+        label 来源颜色
+        select.form-control(name='source_color')
+          option(value='') 蓝色
+          if article.source_color == 'redbg'
+            option(value='redbg', selected='selected') 红色
+          else
+            option(value='redbg') 红色
+      div.form-group
+        label 分类
+        select.form-control(name='type')
+          each type in types
+            if article.type == type.id
+              option(value=type.id, selected='selected')= type.name
+            else
+              option(value=type.id)= type.name
+      div.form-group
+        label 简介
+        textarea.form-control(rows='3', name='intro')= article.intro
+      div.form-group
+        label 显示样式
+        select.form-control(name='show_type')
+          option(value='0') 一图
+          if article.show_type == 1
+            option(value='1', selected='selected') 三图
+          else
+            option(value='1') 三图
+      div.thumbnails
+        div.form-group
+          label 缩略图1
+          input(type='file', name='thumbnail1')
+        div.form-group(style='display:none;')
+          label 缩略图2
+          input(type='file', name='thumbnail2')
+        div.form-group(style='display:none;')
+          label 缩略图3
+          input(type='file', name='thumbnail3')
+      div.radio
+        label
+          if article.ishot == 0
+            input(type='radio', name='ishot', value='0' checked='checked') 
+          else
+            input(type='radio', name='ishot', value='0') 
+          span 非热点新闻
+      div.radio
+        label
+          if article.ishot == 1
+            input(type='radio', name='ishot', value='1' checked='checked')
+          else
+            input(type='radio', name='ishot', value='1')
+          span 热点新闻
+      div.radio
+        label
+          if article.iscarousel == 0
+            input(type='radio', name='iscarousel', value='0' checked='checked')
+          else
+            input(type='radio', name='iscarousel', value='0')
+          span 非首页轮播新闻
+      div.radio
+        label
+          if article.iscarousel == 1
+            input(type='radio', name='iscarousel', value='1', checked='checked')
+          else
+            input(type='radio', name='iscarousel', value='1')
+          span 首页轮播新闻
+      button.btn.btn-default.btn-save(type='button') 保存
+  script(type='text/javascript', src='/javascripts/admin/article_edit.js')

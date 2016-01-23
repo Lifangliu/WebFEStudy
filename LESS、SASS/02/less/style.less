@@ -1,0 +1,197 @@
+.container {
+    width: 486px;
+    margin:20px auto;
+    .header {
+        width: 486px;
+        height: 220px;
+        border: 10px solid #918F81;
+        background: #B7454E;
+        text-align: center;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border-bottom: 10px solid #918F81;
+        h1 {
+            color: #fff;
+            padding-top: 78px;
+            font-size: 48px;
+            line-height: 58px;
+        }
+        h4 {
+            color: #CAC8C7;
+            font-size: 18px;
+        }
+    }
+    .brands {
+        background: #fff;
+        height: 1100px;
+        width: 486px;
+        border-left: 10px solid #918F81;
+        border-right: 10px solid #918F81;
+    }
+}
+
+.brands {
+    ul {
+        padding-top: 10px;
+        li {
+            height: 320px;
+            background: #E6E8EA;
+            margin-top: 10px;
+            border-style: solid;
+            border-color: #fff;
+            border-width: 0 6px;
+            border-bottom: 10px solid #918F81;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.brand-item {
+    .title {
+        height: 84px;
+        overflow: hidden;
+        & > * {
+            float: left;
+        }
+    }
+    dl{
+        margin-top: 10px;
+        display: block;
+        overflow: hidden;
+        height: 178px;
+        background: #1F512C;
+        color:#fff;
+        .item{
+            float: left;
+            font-size: 14px;
+            width: 16.3px;
+            writing-mode:tb-rl;
+        }
+        dd{
+            .item;
+        }
+        dt{
+            .item;
+            font-weight: bold;
+            color: #FFFEFE;
+        }
+    }
+    .direction{
+        span{
+            font-weight: bold;
+            font-size: 13px;
+            display: block;
+            background: #E6E8EA;
+            width: 330px;
+            position: absolute;
+            top: -10px;
+        }
+        width: 70%;
+        margin:16px auto 0;
+        text-align: center;
+        position: relative;
+        border-bottom: 20px solid red;
+        border-right:65px solid transparent;
+    }
+    .dire{
+        float: left;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px;
+    }
+    .dire1{
+        .dire;
+        border-color:red red transparent  transparent;
+    }
+    .dire2{
+        .dire;
+        //margin-left: 10px;
+        border-color:transparent  transparent red red;
+    }
+}
+dt{
+    .arrow{
+        .triangle{
+            height: 0;
+            width:0;
+            border-width: 8px;
+            border-style: solid;
+            border-color:transparent transparent #fff transparent;
+        }
+        .square{
+            margin-left: 4px;
+            width: 8px;
+            height: 6px;
+            background: #fff;
+        }
+    }
+}
+.title-left {
+    & > * {
+        display: block;
+    }
+    .number {
+        margin-top: 18px;
+        background: #981115;
+        color: #fff;
+        width: 124px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .time {
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        &:before {
+            content: "　";
+        }
+    }
+}
+
+.title-right {
+    width: 330px;
+    padding-left: 20px;
+    .entire {
+        overflow: hidden;
+        margin-top: 10px;
+        &> * {
+            display: block;
+            float: left;
+            color: #239248;
+        }
+        i {
+            width: 10px;
+        }
+        h2 {
+            width: 160px;
+            text-align: center;
+            & > * {
+                display: block;
+            }
+            span {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
+    .current {
+        margin-top: 10px;
+        h4 {
+            display: block;
+            font-size: 19px;
+            line-height: 19px;
+            text-align: center;
+            color: #8B2831;
+            font-weight: bold;
+        }
+    }
+}

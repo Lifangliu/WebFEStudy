@@ -1,0 +1,32 @@
+doctype html
+html(lang="zh_CN")
+	head
+		title 百度新闻管理系统-登录
+		meta(charset='utf-8')
+		meta(http-equiv="X-UA-Compatible", content='IE=edge')
+		meta(name="viewport", content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/main.css')
+		script(type='text/javascript')= err
+	body
+		div.container
+			div.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12
+				div.panel.panel-info.panel-login
+					div.panel-heading
+						h3.panel-title 百度新闻管理系统用户登录
+					div.panel-body
+						form.form-horizontal(method='post')
+							div.form-group
+								label.col-sm-2.control-label 用户名
+								div.col-sm-10
+									input.form-control#username(type='text', name='username', placeholder='请输入用户名', required='required')
+							div.form-group
+								label.col-sm-2.control-label 密码
+								div.col-sm-10
+									input.form-control#password(type='password', name='password', placeholder='请输入您的密码', required='required')
+							div.form-group
+								div.col-sm-offset-2.col-sm-10
+									button.btn.btn-default.btn-login(type='button') 登录
+					div.panel-footer.text-center ©2015 Baidu
+		script(type='text/javascript', src='/javascripts/jquery.min.js')
+		script(type='text/javascript', src='/javascripts/admin/login.js')

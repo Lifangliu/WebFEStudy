@@ -1,0 +1,403 @@
+html,
+body,
+ul,
+ol,
+li,
+h4,
+p,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+    border: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.redbg {
+    background: #e02f2f!important;
+}
+
+.content {
+    width: 100%;
+}
+
+.content .header {
+    width: 100%;
+    min-width: 320px;
+    height: 44px;
+    background: #3E98F0 url(../images/bg-news-logo.png) no-repeat center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .header > a {
+    display: block;
+    width: 34px;
+    height: 100%;
+    background: url(../images/bg-new-toolbar.png) no-repeat;
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    position: absolute;
+}
+
+.content .header > a.bdhome {
+    background-position: center 4px;
+}
+
+.content .header > a.username {
+    background-position: center -463px;
+    left: 40px;
+}
+
+.content .header > a.search {
+    background-position: center -162px;
+    right: 40px;
+}
+
+.content .header > a.subscribe {
+    background-position: center -107px;
+    right: 0;
+}
+
+.content .main .navigator {
+    background-color: #3e98f0;
+}
+
+.content .main .navigator .divider {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+}
+
+.content .main .navigator .nav-content {
+    overflow: hidden;
+}
+
+.content .main .navigator .nav-content ul {
+    overflow: hidden;
+}
+
+.content .main .navigator .nav-content ul li {
+    display: block;
+    float: left;
+    width: 16.666%;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    position: relative;
+}
+
+.content .main .navigator .nav-content ul li.double {
+    width: 33.333%;
+}
+
+.content .main .navigator .nav-content ul li a {
+    color: #fff;
+    height: 28px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+
+.content .main .navigator .nav-content ul li.cur a {
+    border-bottom: 1px solid #fff;
+}
+
+.content .main .navigator .nav-content ul li b {
+    position: absolute;
+    top: 12px;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+}
+
+.content .main .carousel {
+    width: 98%;
+    overflow: hidden;
+    margin: 10px auto 0;
+}
+
+.content .main .carousel ul {
+    overflow: hidden;
+    width: 100%;
+    height: 249px;
+}
+
+.content .main .carousel ul li {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.content .main .carousel ul li a {
+    display: block;
+    border: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.content .main .carousel ul li a img {
+    width: 100%;
+    height: 246px;
+}
+
+.content .main .carousel ul li a h4 {
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 7px;
+}
+
+.content .main .carousel ol {
+    overflow: hidden;
+}
+
+.content .main .carousel ol li {
+    width: 20%;
+    float: left;
+}
+
+.content .main .carousel ol li a {
+    height: 3px;
+    background: #d0d1d3;
+    display: block;
+}
+
+.content .main .carousel ol li.cur a {
+    background: #3e98f0;
+}
+
+.content .main .hotword {
+    width: 98%;
+    margin: 10px auto 0;
+    overflow: hidden;
+    height: 28px;
+}
+
+.content .main .hotword span {
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    background: #e02f2f;
+    width: 36px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.content .main .hotword ul {
+    display: block;
+    float: left;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.content .main .hotword ul li {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 6px;
+    font-size: 15px;
+}
+
+.content .main .hotword ul li a {
+    color: #545454;
+}
+
+.content .main .hotword ul li a strong {
+    font-weight: normal;
+    display: block;
+    float: left;
+}
+
+.content .main .hotword ul li a b {
+    display: block;
+    width: 13px;
+    height: 28px;
+    background: url(../images/arrorw-right.png) no-repeat;
+    background-size: 9px 12.5px;
+    line-height: 28px;
+    float: left;
+    background-position: 50% 50%;
+    margin-left: 2px;
+}
+
+.content .main .news-list {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.content .main .news-list li {
+    overflow: hidden;
+    margin: 10px auto;
+    border-bottom: 1px solid #f6f6f6;
+    padding-bottom: 10px;
+}
+
+.content .main .news-list li a {
+    position: relative;
+    display: block;
+}
+
+.content .main .news-list li a img {
+    width: 95px;
+    height: 68px;
+}
+
+.content .main .news-list li a .probable {
+    position: absolute;
+    top: 0;
+    left: 106px;
+    right: 0;
+}
+
+.content .main .news-list li a .probable span.title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+}
+
+.content .main .news-list li a .probable p.desc {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 6px;
+}
+
+.content .main .news-list li a b.source {
+    font-weight: normal;
+    display: block;
+    width: 54px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #0da5fc;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content .main .news-list li a .time {
+    position: absolute;
+    bottom: 0;
+    left: 106px;
+    font-size: 12px;
+    color: #b8bac0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content .main .news-list li a .time.lf0 {
+    left: 0;
+}
+
+.content .main .news-list li a .title1 {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+}
+
+.content .main .news-list li a p {
+    margin-top: 5px;
+    overflow: hidden;
+    padding-bottom: 22px;
+}
+
+.content .main .news-list li a p img {
+    width: 30%;
+    height: 89px;
+    display: block;
+    float: left;
+}
+
+.content .main .news-list li a p img:nth-child(2) {
+    margin: 0 5%;
+}
+
+.content .main button.load-btn {
+    display: block;
+    margin: 14px auto;
+    width: 60%;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ebedef;
+    background-color: #f8f9fa;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+}
+
+.content .footer {
+    width: 100%;
+    height: 44px;
+    background: #239bf0;
+    color: #fff;
+    font-size: 13px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-left: -1px;
+}
+
+.content .footer a {
+    display: block;
+    width: 33%;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    border-left: 1px solid #fff;
+    text-align: center;
+}
+
+.content .footer a span {
+    color: #fff;
+    display: inline-block;
+    background-image: url(../images/bg-footer.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 30px 300px;
+    height: 22px;
+    background-position: 0 3px;
+    padding-left: 25px;
+}
+
+.content .footer a span.feedback {
+    background-position: 0 3px;
+}
+
+.content .footer a span.app-recommend {
+    background-position: 0 -31px;
+}
+
+.content .footer a span.app-download {
+    background-position: 0 -64px;
+}

@@ -1,0 +1,16 @@
+body {
+    padding-top: 70px;
+}
+
+.mu-panel-body {
+    padding: 0;
+}
+
+.page-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mypage {
+    text-align: center;
+}

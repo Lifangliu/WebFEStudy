@@ -1,0 +1,57 @@
+extends ./layout
+block content
+  div.col-sm-6.col-md-5.col-xs-12
+    h1.page-header 添加文章
+    form(method='post', enctype='multipart/form-data')
+      div.form-group
+        label 标题
+        input.form-control.nonull(type='text', name='title', placeholder='标题')
+      div.form-group
+        label 新闻来源
+        input.form-control.nonull(type='text', name='source', placeholder='新闻来源')
+      div.form-group
+        label 来源颜色
+        select.form-control(name='source_color')
+          option(value='') 蓝色
+          option(value='redbg') 红色
+      div.form-group
+        label 分类
+        select.form-control(name='type')
+          each type in types
+            option(value=type.id)= type.name
+      div.form-group
+        label 简介
+        textarea.form-control(rows='3', name='intro')
+      div.form-group
+        label 显示样式
+        select.form-control(name='show_type')
+          option(value='0') 一图
+          option(value='1') 三图
+      div.thumbnails
+        div.form-group
+          label 缩略图1
+          input.nonull(type='file', name='thumbnail1')
+        div.form-group(style='display:none;')
+          label 缩略图2
+          input(type='file', name='thumbnail2',disabled='disabled')
+        div.form-group(style='display:none;')
+          label 缩略图3
+          input(type='file', name='thumbnail3',disabled='disabled')
+      div.radio
+        label
+          input(type='radio', name='ishot', value='0' checked='checked') 
+          span 非热点新闻
+      div.radio
+        label
+          input(type='radio', name='ishot', value='1') 
+          span 热点新闻
+      div.radio
+        label
+          input(type='radio', name='iscarousel', value='0' checked='checked') 
+          span 非首页轮播新闻
+      div.radio
+        label
+          input(type='radio', name='iscarousel', value='1') 
+          span 首页轮播新闻
+      button.btn.btn-default.btn-save(type='button') 保存
+  script(type='text/javascript', src='/javascripts/admin/article_add.js')

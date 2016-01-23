@@ -1,0 +1,159 @@
+@media screen and (min-width: 768px) {
+    .padsf {
+        display: none;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width: 768px) {
+    body {
+        font-family: arial, "华文细黑";
+        background: #FAFAFA;
+    }
+    .search div .logo {
+        display: none;
+    }
+    .search div .padlogo {
+        display: block;
+    }
+    .baiduhd-ad {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+    .topad {
+        display: block;
+    }
+    .container {
+        width: 100%;
+    }
+    .search .sform {
+        display: none;
+    }
+    .search .padsf {
+        display: block;
+    }
+    .s-rmenu {
+        display: block;
+    }
+    .lh {
+        display: none;
+    }
+    .cp a {
+        display: none;
+    }
+    .cp img {
+        display: none;
+    }
+    .footer {
+        margin-top: 20px;
+        position: initial;
+    }
+    .s-pad-news {
+        display: table;
+    }
+    .s-pad-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        font-family: arial, "华文细黑";
+        min-width: 320px;
+    }
+    .search div .logo {
+        display: none;
+    }
+    .search div .padlogo {
+        display: none;
+    }
+    .search div .phonelogo {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+    .search .sform {
+        width: 100%;
+        text-align: center;
+    }
+    .search .sform .s_ipt {
+        width: 66%;
+        height: 40px;
+        border-color: #8d9394;
+        border-top-style: double;
+        border-left-style: double;
+        border-bottom-style: double;
+        float: none;
+    }
+    .search .sform .s_btn {
+        width: 79px;
+        background: #ececec;
+        background: -webkit-linear-gradient(top, #f9f9f9, #e7e9eb);
+        color: #46484b;
+        box-shadow: 0 0 0 1px #fff inset;
+        text-shadow: 0 1px 0 #fafafa;
+        white-space: nowrap;
+        height: 42px;
+        line-height: 42px;
+        border: 1px solid #8d9394;
+        letter-spacing: -1px;
+        font-weight: 700;
+        font-size: 16px;
+        float: none;
+        margin-left: -3px;
+    }
+    .search .sform .s_btn:hover {
+        cursor: pointer;
+        background: #ececec;
+        border-bottom: 1px solid #8d9394;
+        box-shadow: 0 0 0 1px #fff inset;
+    }
+    .search .padsf {
+        display: none;
+    }
+    .lh {
+        display: none;
+    }
+    .cp {
+        color: #aaa;
+    }
+    .cp .cbdt {
+        display: none;
+    }
+    .cp .bdt {
+        display: inline-block;
+    }
+    .cp .read {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .cp a {
+        color: #aaa;
+        display: none;
+    }
+    .cp img {
+        display: none;
+    }
+    .footer {
+        margin-top: 20px;
+        position: initial;
+    }
+    .mob-navs {
+        display: block;
+    }
+    .m_life_box {
+        display: block;
+    }
+    .m_manager_box {
+        display: block;
+    }
+    .footer .verswitch {
+        display: block;
+    }
+    .footer_ad {
+        display: block;
+    }
+}

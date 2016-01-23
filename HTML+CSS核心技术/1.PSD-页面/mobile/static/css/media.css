@@ -1,0 +1,59 @@
+/*iphone5横屏*/
+@media (min-width:481px) and (max-width:568px) {
+    .container .type-btns ul.type-list li div.type-name a {
+        font-size: 1.3em;
+        height: 2.08em;
+        line-height: 2.08em;
+    }
+    .container .type-btns ul.type-list li div.type-name {
+        margin-top: -44%;
+        margin-left: 20%;
+        border-width: 4px;
+    }
+}
+/*iphone6横屏*/
+@media (min-width:569px) and (max-width:667px) {
+    .container .type-btns ul.type-list li div.type-name a {
+        font-size: 1.7em;
+        height: 2.4em;
+        line-height: 2.4em;
+    }
+    .container .type-btns ul.type-list li div.type-name {
+        margin-top: -43%;
+        margin-left: 18%;
+        border-width: 4px;
+    }
+}
+/*iphone 6plus 横屏*/
+@media (min-width:668px) and (max-width:736px) {
+    .container .type-btns ul.type-list li div.type-name a {
+        font-size: 2em;
+        height: 2.4em;
+        line-height: 2.4em;
+    }
+    .container .type-btns ul.type-list li div.type-name {
+        margin-top: -43%;
+        margin-left: 22%;
+        border-width: 4px;
+    }
+}
+/*iphone6*/
+@media (min-width:340px) and (max-width:375px) {
+    .container .type-btns ul.type-list li div.type-name a {
+        font-size: 1em;
+        height: 2.278em;
+        line-height: 2.278em;
+    }
+}
+/*iphone 6plus*/
+@media (min-width:375px) and (max-width:414px) {
+    .container .type-btns ul.type-list li div.type-name a {
+        font-size: 1.1em;
+        height: 2.3em;
+        line-height: 2.3em;
+    }
+    .container .type-btns ul.type-list li div.type-name {
+        margin-top: -45%;
+        margin-left: 19%;
+    }
+}

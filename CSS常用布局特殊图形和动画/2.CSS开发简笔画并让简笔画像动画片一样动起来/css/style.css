@@ -1,0 +1,133 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.view {
+    height: 300px;
+    width: 360px;
+    margin: 100px auto 0 auto;
+}
+
+/*头部*/
+.head {
+    width: 200px;
+    height: 100px;
+    background-color: #AFBF43;
+    -webkit-border-radius: 200px 200px 0 0;
+    border-radius: 200px 200px 0 0;
+}
+
+/*身体*/
+.body {
+    margin-top: 6px;
+    width: 200px;
+    height: 180px;
+    background-color: #AFBF43;
+    -webkit-border-radius: 0 0 30px 30px;
+    border-radius: 0 0 30px 30px;
+}
+
+/*腿*/
+.leg {
+    margin-left: 38px;
+    width: 40px;
+    height: 80px;
+    background-color: #AFBF43;
+    -webkit-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    float: left;
+}
+
+.middle {
+    float: left;
+}
+
+/*手臂*/
+.arm {
+    margin-top: 100px;
+    float: left;
+    width: 40px;
+    height: 160px;
+    background-color: #AFBF43;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.lefthand {
+    margin-right: 10px;
+}
+
+.righthand {
+    margin-left: 10px;
+    -webkit-transform-origin: 50% 15%;
+    -webkit-transform: rotate(-180deg);
+    transform-origin: 50% 15%;
+    transform: rotate(-180deg);
+}
+
+.Byeleft{
+    -webkit-animation-name: byeleft;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: byeleft;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.Byeright{
+    -webkit-animation-name: byeright;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: byeright;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*天线*/
+.antenna {
+    width: 10px;
+    height: 69px;
+    background-color: #AFBF43;
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+}
+
+.antleft {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin: -36px 0 0 10px;
+}
+
+.antright {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin: -36px 0 0 180px;
+}
+
+/*眼睛*/
+.eye {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    margin: 44px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.eyeright {
+    margin-left: 140px;
+}
+
+/*激光动画*/
+.Laser {
+    -webkit-animation-name: laser;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: laser;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,69 @@
+extends ./layout
+block content
+	div.col-sm-9.col-md-10.col-xs-12
+		h1.page-header 用户列表
+		div.table-responsive
+			table.table.table-striped.table-hover
+				thead
+					tr
+						th ID
+						th 用户名
+						th 密码
+						th 姓名
+						th 操作
+				tbody
+					each manager in page.data
+						tr
+							td= manager.id
+							td= manager.username
+							td ******
+							td= manager.name
+							td
+								button.btn.btn-warning.btn-mod(type='button', data-toggle='modal', data-target='.mod-modal' data-mid=manager.id, data-musername=manager.username, data-mname=manager.name) 修改
+								button.btn.btn-danger.btn-del(type='button', data-toggle='modal', data-target=".del-modal" data-delid=manager.id) 删除
+			nav.mypage
+				ul.pagination(data-page=page.page, data-totalpage=page.totalPage)
+					li.formerly
+						a(href='?pn=1') 首页
+					li.formerly
+						a(href= '?pn=' + (page.page - 1)) 上一页
+					li.future
+						a(href= '?pn=' + (page.page - 0 + 1)) 下一页
+					li.future
+						a(href= '?pn=' + page.totalPage) 末页
+	div.modal.fade.del-modal(tabindex='-1', role='dialog')
+		div.modal-dialog.modal-sm
+			div.modal-content
+				div.modal-header
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+					h4.modal-title 删除确认
+				div.modal-body
+					h3 您确定要删除吗？
+				div.modal-footer
+					button.btn.btn-default(type='button', data-dismiss='modal') 取消
+					button.btn.btn-danger.btn-del2(type='button') 确认删除
+	div.modal.fade.mod-modal(tabindex='-1', role='dialog')
+		div.modal-dialog.modal-sm
+			div.modal-content
+				div.modal-header
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+					h4.modal-title 管理员修改
+				div.modal-body
+					form(method='post')
+						input(type='hidden', name='id')
+						div.form-group
+							label 用户名
+							input.form-control(type='text', name='username', placeholder='请输入用户名' readonly='readonly')
+						div.form-group
+							label 密码
+							input.form-control(type='password', name='password', placeholder='******' value='')
+						div.form-group
+							label 姓名
+							input.form-control(type='text', name='name', placeholder='请输入管理员姓名')
+				div.modal-footer
+					button.btn.btn-default(type='button', data-dismiss='modal') 取消
+					button.btn.btn-warning.btn-mod2(type='button') 保存
+	script(type='text/javascript', src='/javascripts/admin/manager.js')
+						

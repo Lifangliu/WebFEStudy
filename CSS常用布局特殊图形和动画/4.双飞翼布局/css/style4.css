@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+为什么现在不用table布局了
+table布局需要页面加载完成之后才能进行渲染，table的代码写起来比较大，样式又不好控制，展示一些表格的时候比较方便
+正常布局大框的时候还是要用div+css，简洁，逐行渲染，
+
+圣杯布局和双飞翼布局就是为了解决除了一列以为的多列
+
+*/
+
+body,div,ul,li,a,article,h3{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+#header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #2CCFA9;
+	overflow: hidden;
+	
+}
+#header ul{
+	width:1000px;
+	margin: 0 auto;	
+	overflow:hidden;
+	}
+
+#header ul li{
+	margin-right: 30px;
+	float: left;
+	text-align: center;
+}
+#header ul li a:link,#header ul li a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+#header ul li a:hover{
+	color:#E8D100;
+	}
+.content{
+	height: 500px;
+	width: 100%;
+	background: url("bg.jpg");
+	overflow: hidden;
+	text-align:justify;
+}
+.content h3{
+	font-size:18px;
+	font-weight:bold;
+	line-height:40px;
+	}
+.middle{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	overflow: hidden;
+	
+}
+.inner{
+	margin-left: 430px;
+	margin-right: 430px;
+	text-indent: 2em;
+	padding: 15px;
+	border-left:3px dashed #989898;
+	border-right:3px dashed #989898;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+}
+.left{
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	float: left;
+	text-indent: 2em;
+	margin-left: -100%;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	overflow: hidden;
+	}
+
+.right{
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	text-indent: 2em;
+	float: left;
+	margin-left: -430px;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+	overflow: hidden;	
+	
+}
+.footer{
+	width: 100%;
+	height: 30px;
+	background: #CCCCCC;
+	line-height: 30px;
+	text-align: center;
+
+}

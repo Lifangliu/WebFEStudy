@@ -1,0 +1,1978 @@
+/*总容器*/
+
+.container {
+    width: 100%;
+    min-width: 1000px;
+}
+
+
+/*header部分*/
+
+.container .header {
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 70px;
+}
+
+.container .header .wrap {
+    position: relative;
+    height: 50px;
+}
+
+.container .header .wrap > a {
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.container .header .wrap a h2 {}
+
+.container .header .wrap a h2 img {
+    width: 113px;
+    height: 41px;
+    border: none;
+    margin-top: 5px;
+}
+
+.container .header .wrap .search-section {
+    float: left;
+    width: 380px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+    margin: 5px 0 5px 196px;
+    position: relative;
+}
+
+.container .header .wrap .search-section > input[type='text'] {
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    border: none;
+    outline: 0;
+    padding-left: 10px;
+    width: 338px;
+    float: left;
+}
+
+.container .header .wrap .search-section > input[type='submit'].search-btn {
+    width: 40px;
+    height: 37px;
+    background: url(../images/topsearch-icon_e1f5df2.png) center center no-repeat;
+    cursor: pointer;
+    float: left;
+    border: none;
+    border-left: 1px solid #dfdfdf;
+    outline: 0;
+}
+
+.container .header .wrap .search-section > .hot-words {
+    position: absolute;
+    right: 48px;
+    top: 7px;
+}
+
+.container .header .wrap .search-section > .hot-words > a {
+    color: #808080;
+    background: #F3F3F3;
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.container .header .wrap .search-section > input[type='submit'].search-btn.hover {
+    background: #35b558 url("../images/topsearch-icon2_8c8d8b0.png") no-repeat scroll center center !important;
+    border: none;
+    border-left: 1px solid #35b558;
+}
+
+.container .header .wrap .search-section > input[type='submit'].search-btn:hover {
+    background: #35b558 url("../images/topsearch-icon2_8c8d8b0.png") no-repeat scroll center center !important;
+    border: none;
+    border-left: 1px solid #35b558;
+}
+
+.container .header .wrap .loginbox {
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    font-size: 12px;
+    color: #333;
+}
+
+.container .header .wrap .loginbox span.my-massage2 {
+    cursor: pointer;
+    display: inline-block;
+    background: url(../images/massage-icon2_d1369b2.gif) left center no-repeat;
+    background-size: 15px 13px;
+    width: 16px;
+    text-align: left;
+}
+
+.container .header .wrap .loginbox em {
+    padding: 0 10px;
+}
+
+.container .header .wrap .loginbox a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*页面加载进度*/
+
+.container #loading {
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+.container #loading .loading-length {
+    height: 2px;
+    overflow: hidden;
+    background: #35b558;
+}
+
+
+/*菜单*/
+
+.container .menu {
+    height: 42px;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+}
+
+.container .menu .navbox {
+    margin: 0 auto;
+    height: 42px;
+}
+
+.container .menu .navbox > ul {
+    list-style: none;
+    height: 42px;
+    width: 65%;
+    float: left;
+}
+
+.container .menu .navbox > ul > li {
+    float: left;
+    padding: 0 22px;
+    position: relative;
+}
+
+.container .menu .navbox > ul > li:nth-child(1) {
+    padding: 0;
+    margin-right: 22px;
+}
+
+.container .menu .navbox > ul > li > a {
+    font-size: 14px;
+    color: #333;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.container .menu .navbox > ul > li > a:hover {
+    color: #35b558;
+}
+
+.container .menu .navbox > ul > li > img {
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+.container .menu .navbox > .user-need {
+    float: right;
+}
+
+.container .menu .navbox > .user-need > a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 42px;
+    margin-left: 20px;
+}
+
+.container .menu .navbox > .user-need > a:hover {
+    color: #35b558;
+}
+
+.container .menu .navbox > .user-need > a > img {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+}
+
+.container .menu .navbox > .user-need > a > img.vip {
+    width: 21px;
+    height: 14px;
+    top: 2px;
+}
+
+.container .menu .navbox > .user-need > a > img.app {
+    top: 2px;
+}
+
+
+/*page main*/
+
+.container #pager {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container #pager .roof {
+    height: 307px;
+    margin: 20px auto 0 auto;
+}
+
+.container #pager .roof .lesson-classfiy-nav {
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 307px;
+    border-top: 2px solid #35b558;
+    border-right: 0;
+    z-index: 300;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul {
+    width: 210px;
+    height: 296px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li {
+    list-style: none;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div {
+    width: 208px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #F5F5F5;
+    background: #fff url(../images/more-icon_d39346f.png) 186px center no-repeat;
+    background-size: 6px 10px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li:last-child > div {
+    border-bottom: 0;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div:hover {
+    width: 213px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #333;
+    border-width: 1px 3px 1px 2px;
+    border-style: solid;
+    border-color: #e4e4e4 #fff #e4e4e4 #35b558;
+    margin-top: -1px;
+    margin-left: -2px;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div:hover a {
+    color: #35b558;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show {
+    display: none;
+    min-height: 410px;
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    left: 210px;
+    top: -2px;
+    border: 1px solid #e4e4e4;
+    border-left: 0;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show > div {
+    width: 400px;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dl {
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dl dt {
+    border-bottom: 1px solid #f5f5f5;
+    display: block;
+    height: 37px;
+    line-height: 45px;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dl dt > a {
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dl dt > a:hover {
+    color: #35b558;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dd {
+    list-style: outside none none;
+    margin-left: -5px;
+    padding: 3px 0;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dd a {
+    border-left: 1px solid #e0e0e0;
+    color: #666;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding: 0 7px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dd a:hover {
+    color: #35b558;
+}
+
+.container #pager .roof .lesson-classfiy-nav > ul > li > div > .lesson-list-show dd a:first-child {
+    border: 0;
+}
+
+.container #pager .roof .lesson-classfiy-nav > .line {
+    height: 9px;
+    width: 210px;
+    background: #f9f9f9 url(../images/alt-d_5632351.png) center center no-repeat;
+    background-size: 7px 3px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.container #pager .roof .index-banner {
+    width: 570px;
+    height: 307px;
+    float: left;
+    margin-left: 10px;
+    background: #ccc;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    overflow: hidden;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper {
+    position: relative;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper ul {
+    list-style: none;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper ul li {
+    float: left;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper ol.flex-control-nav {
+    list-style: none;
+    position: absolute;
+    top: 284px;
+    left: 148px;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper ol.flex-control-nav > li {
+    display: inline-block;
+    width: 39px;
+    height: 7px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper ol.flex-control-nav > li > a {
+    display: block;
+    width: 39px;
+    height: 7px;
+    background: url(../images/swiper1_6a811bf.jpg) center center no-repeat;
+    text-indent: -9999px;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper ol.flex-control-nav > li > a.flex-active {
+    background: url(../images/swiper2_78fab30.jpg) center center no-repeat;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper:hover ul.flex-direction-nav {
+    display: block;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper > ul.flex-direction-nav {
+    list-style: none;
+    display: none;
+    position: inherit;
+    top: 124px;
+    z-index: 1;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper > ul.flex-direction-nav a {
+    position: absolute;
+    top: 42%;
+    text-indent: -9999px;
+    width: 40px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: -10px -5px;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper > ul.flex-direction-nav a.flex-prev {
+    background-image: url(../images/banner-left_fe0df34.png);
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper > ul.flex-direction-nav a.flex-next {
+    right: 0;
+    text-align: right;
+    background-image: url(../images/banner-right_a0bdd7d.png);
+    text-indent: 9999px;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper > ul.flex-direction-nav a:hover {
+    background-position: -10px -65px;
+}
+
+.container #pager .roof .index-banner > .swiper-wrapper > ul.slides {
+    width: 570px;
+    height: 305px;
+}
+
+.container #pager .roof .lesson-right-show {
+    width: 210px;
+    float: left;
+    border: 1px solid #E4E4E4;
+    height: 307px;
+    overflow: hidden;
+}
+
+.container #pager .roof .lesson-right-show > .free-box {
+    height: 153px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container #pager .roof .lesson-right-show > .free-box > a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.container #pager .roof .lesson-right-show > .free-box h2 {
+    font-size: 15px;
+    color: #666;
+}
+
+.container #pager .roof .lesson-right-show .free-box p {
+    color: #35b558;
+    font-size: 12px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+.container #pager .roof .lesson-right-show .free-box p span:nth-child(1) {
+    padding-left: 0;
+    color: #35b558;
+}
+
+.container #pager .roof .lesson-right-show .free-box p span {
+    padding: 5px;
+    color: #35b558;
+}
+
+.container #pager .roof .lesson-right-show .free-box button {
+    width: 168px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    border-radius: inherit;
+    margin-top: 10px;
+    cursor: pointer;
+    border-color: #7bda95;
+    outline: 0;
+    transition: border-color 1s, background 1s;
+}
+
+.container #pager .hot-lesson {
+    margin: 30px auto 0 auto;
+}
+
+
+/*热门推荐*/
+
+.container #pager .hot-lesson > ul {
+    list-style: none;
+    height: 41px;
+    background: url(../images/hotnav_bc_f22b37e.jpg) 0 100% repeat-x;
+}
+
+.container #pager .hot-lesson > ul > li {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.container #pager .hot-lesson > ul > li.on {
+    border-bottom: 2px solid #35b558;
+    background: url(../images/index-sj_cc73747.png) center bottom no-repeat;
+    background-size: 10px 4px;
+    color: #35b558;
+}
+
+.container #pager .hot-lessonbox {
+    margin: 20px auto 0 auto;
+}
+
+.container #pager .hot-lessonbox > .lesson-list {
+    display: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list.on {
+    display: block;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul {
+    list-style: none;
+    width: 1100px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li {
+    float: left;
+    margin-right: 20px;
+    background: 0 0;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 235px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lessonimg-box {
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
+    width: 235px;
+    height: 130px;
+    position: relative;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(../images/common/icon_7f8b929.png) -58px -43px no-repeat;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lessonimg-box a {
+    text-decoration: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lessonimg-box a .lessonimg {
+    width: 100%;
+    height: 130px;
+    border: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lessonimg-box a .lessonplay {
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lessonimg-box a .lessonplay .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../images/player_icon_5c67475.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor {
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    background: #fff!important;
+    height: 88px;
+    padding: 10px;
+    z-index: 102;
+    position: relative;
+    overflow: hidden;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .lesson-info-h2 {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .lesson-info-h2 > a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor p {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon {
+    font-size: 12px;
+    color: gray;
+    position: relative;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon > div {
+    zoom: 1;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon dl {
+    width: 120px;
+    float: left;
+    white-space: nowrap;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon .learn-number {
+    float: right;
+    display: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon dl > dd {
+    margin-bottom: 8px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon dl > dd .time-icon {
+    background: url(../images/clok_a413ecf.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon dl > dd.zhongji {
+    display: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon .learn-number {
+    float: right;
+    display: none;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: 4px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon .lessonicon-box a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+
+.container #pager .hot-lessonbox > .lesson-list > ul > li .lesson-infor > .timeandicon .lessonicon-box a img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+
+/*学习路径*/
+
+.container #pager .learnbox {
+    margin: 20px auto 0 auto;
+}
+
+.container #pager .learnbox .index-public-title,
+.container #pager .excellent .index-public-title,
+.container #pager .wiki .index-public-title {
+    margin-bottom: 16px;
+}
+
+.container #pager .learnbox .index-public-title strong,
+.container #pager .excellent .index-public-title strong,
+.container #pager .wiki .index-public-title strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.container #pager .learnbox .index-public-title strong a,
+.container #pager .excellent .index-public-title strong a,
+.container #pager .wiki .index-public-title strong a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container #pager .learnbox .index-public-title .way,
+.container #pager .excellent .index-public-title .way,
+.container #pager .wiki .index-public-title .way {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 6px 8px 0;
+    cursor: pointer;
+}
+
+.container #pager .learnbox .index-public-title .way-infor,
+.container #pager .excellent .index-public-title .way-infor,
+.container #pager .wiki .index-public-title .way-infor {
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+}
+
+.container #pager .learnbox .index-public-title .way-infor i,
+.container #pager .excellent .index-public-title .way-infor i,
+.container #pager .wiki .index-public-title .way-infor i {
+    background: url(../images/title-sj_adebc06.jpg) center center no-repeat;
+    width: 5px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    z-index: 10;
+}
+
+.container #pager .learnbox .index-public-title .more-lesson,
+.container #pager .excellent .index-public-title .more-lesson,
+.container #pager .wiki .index-public-title .more-lesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+    text-decoration: none;
+}
+
+.container #pager .learnbox .learn-card a {
+    width: 20%;
+    border: 1px solid #E4E4E4;
+    float: left;
+    text-align: center;
+    display: block;
+    height: 300px;
+    border-right: 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.container #pager .learnbox .learn-card a p {
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+    height: 20px;
+    width: 199px;
+    overflow: hidden;
+}
+
+.container #pager .learnbox .learn-card a:hover .greenbtn2 {
+    background: #35b558;
+    color: #fff;
+    outline: 0;
+}
+
+.container #pager .learnbox .learn-card a .greenbtn2 {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.container #pager .learnbox .learn-card a:hover .waiting-btn {
+    background: #ddd;
+}
+
+.container #pager .learnbox .learn-card a .waiting-btn {
+    background: #f5f5f5;
+    color: gray;
+    border: 1px solid #e4e4e4;
+    outline: 0;
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.container #pager .learnbox .learn-card a img {
+    margin-bottom: 24px;
+}
+
+.container #pager .learnbox .learn-card a h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    height: 18px;
+    overflow: hidden;
+}
+
+
+/*知识体系图*/
+
+.container #pager .system {
+    margin-top: 40px;
+}
+
+.container #pager .system .mapbox {
+    border-bottom: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    width: 1000px;
+    height: 481px;
+    overflow: hidden;
+}
+
+.container #pager .system .mapbox .mapbox-1200 {
+    width: 1050px;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform:hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform:hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform {
+    width: 167px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    border-bottom: 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform a {
+    text-decoration: none;
+}
+
+.card-transform .back,
+.card-transform .front {
+    border-bottom: 1px solid #E4E4E4;
+    width: 167px;
+    height: 120px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: .6s;
+    -moz-backface-visibility: hidden;
+    -moz-transition: .6s;
+    -ms-backface-visibility: hidden;
+    -ms-transition: .6s;
+    backface-visibility: hidden;
+    transition: .6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .front {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 15px 0;
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #fff;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .front img {
+    margin-bottom: 5px;
+    height: 40px;
+    width: 40px;
+    border: 0;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .front h2 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .front span {
+    font-size: 14px;
+    color: #35b558;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .back {
+    padding-top: 30px;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: #f5f5f5;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .back strong {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.container #pager .system .mapbox .mapbox-1200 .card-transform .back .greenbtn {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.container #pager .system .more-lesson-list {
+    border: 1px solid #E4E4E4;
+    border-top: 0;
+    padding: 20px;
+}
+
+.container #pager .system .more-lesson-list a {
+    color: #666;
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+
+/*精品系列课程*/
+
+.container #pager .excellent {
+    margin: 40px auto 0 auto;
+}
+
+.container #pager .excellent .wikibox {
+    margin-top: 20px;
+}
+
+.container #pager .excellent .wikibox .lesson-card {
+    position: relative;
+    width: 235px;
+    height: 261px;
+    padding: 16px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    -webkit-transition: border-color .3s;
+    -moz-transition: border-color .3s;
+    transition: border-color .3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.container #pager .excellent .wikibox .lesson-card:nth-child(1) {
+    margin-left: 0;
+}
+
+.container #pager .excellent .wikibox .lesson-card:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.container #pager .excellent .wikibox .lesson-card * {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.container #pager .excellent .wikibox .lesson-card a {
+    color: #666;
+    text-decoration: none;
+}
+
+.container #pager .excellent .wikibox .lesson-card h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.container #pager .excellent .wikibox .lesson-card .images {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .images img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.container #pager .excellent .wikibox .lesson-card .other {
+    position: relative;
+    z-index: 20;
+    color: gray;
+    line-height: 18px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .other span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .lesson-count {
+    max-width: 40px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .other span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .other .learn-count {
+    max-width: 90px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .greenbtn {
+    display: inline-block;
+    /*line-height: 20px;*/
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.container #pager .excellent .wikibox .lesson-card .greenbtn:active,
+.container #pager .excellent .wikibox .lesson-card .greenbtn:focus,
+.container #pager .excellent .wikibox .lesson-card .greenbtn:hover {
+    background: #66d178;
+    color: #fff
+}
+
+.container #pager .excellent .wikibox .lesson-card .collect {
+    float: right;
+    overflow: hidden;
+}
+
+.container #pager .excellent .wikibox .lesson-card .collect > span {
+    width: 56px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .other span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.container #pager .excellent .wikibox .lesson-card .describe {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+.lesson-card .describe .picture {
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.lesson-card .describe .name {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+}
+
+.lesson-card .describe .text {
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    text-align: left;
+    line-height: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.lesson-card .describe .btn {
+    position: absolute;
+    top: 164px;
+    left: 50%;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: -50px;
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.container #pager .excellent .wikibox .lesson-card:hover {
+    border: 1px solid rgb(53, 181, 88);
+}
+
+.container #pager .excellent .wikibox .lesson-card:hover .describe {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container #pager .excellent .wikibox .lesson-card .describe .picture img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*wiki*/
+
+.container #pager .wiki {
+    margin: 40px auto 0 auto;
+}
+
+.container #pager .wiki .wikibox {
+    margin-top: 20px;
+}
+
+.container #pager .wiki .wikibox .one-wiki {
+    width: 333.3px;
+    height: 370px;
+    float: left;
+    padding: 15px;
+    border-style: solid;
+    border-color: #e4e4e4;
+}
+
+.container #pager .wiki .wikibox .one-wiki h2 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container #pager .wiki .wikibox .one-wiki .wiki-img {
+    margin-top: 10px;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd:nth-child(1) {
+    margin-right: 15px;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd {
+    text-align: center;
+    width: 142px;
+    float: left;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd a {
+    text-decoration: none;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd .imgbox {
+    position: relative;
+    width: 142px;
+    height: 200px;
+    background: #999;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd .imgbox .look {
+    position: absolute;
+    width: 40px;
+    z-index: 10;
+    right: -10px;
+    top: -13px;
+    background: url(../images/look_d293d44.png) center center no-repeat;
+    background-size: 100% 100%;
+    height: 20px;
+    display: none;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd .imgbox:hover .look {
+    display: block;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd .imgbox:hover .fengmian {
+    -moz-animation: ffk-animate2 1s ease forwards;
+    -webkit-animation: ffk-animate2 1s ease forwards;
+    -o-animation: ffk-animate2 1s ease forwards;
+    -ms-animation: ffk-animate2 1s ease forwards;
+    animation: ffk-animate2 1s ease forwards;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd .imgbox img.fengmian {
+    width: 142px;
+    height: 200px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    transform-origin: 0 0 0;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd a:hover h3,
+.container #pager .wiki .wikibox .one-wiki dl dd a:hover span {
+    color: #35b558;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd h3 {
+    font-size: 13px;
+    color: #333;
+    height: 13px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 13px;
+    margin: 10px auto;
+}
+
+.container #pager .wiki .wikibox .one-wiki dl dd span {
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+.container #pager .wiki .wikibox .one-wiki ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.container #pager .wiki .wikibox .one-wiki ul li {
+    font-size: 12px;
+    color: #999;
+    line-height: 12px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.container #pager .wiki .wikibox .one-wiki ul li a:hover {
+    color: #35b558;
+}
+
+.container #pager .wiki .wikibox .one-wiki ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.container #pager .wiki .wikibox .one-wiki ul li p {
+    width: 200px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.container #pager .wiki .wikibox .one-wiki ul li span {
+    text-align: right;
+    display: block;
+    float: right;
+    width: 90px;
+}
+
+
+/*enterprise*/
+
+.container #pager .enterprise {
+    margin: 40px auto 0 auto;
+}
+
+.container #pager .enterprise .strategy {
+    border: 1px solid #E4E4E4;
+    height: 90px;
+    padding: 20px;
+    position: relative;
+}
+
+.container #pager .enterprise .startegy-box {
+    overflow: hidden;
+}
+
+.container #pager .enterprise .startegy-box > .swiper-container {
+    height: 50px;
+}
+
+.container #pager .enterprise .startegy-box > .swiper-container .swiper-wrapper {}
+
+.container #pager .enterprise .startegy-box > .swiper-container .swiper-wrapper a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 159.667px;
+    height: 50px;
+    float: left;
+}
+
+.container #pager .enterprise .startegy-box > .swiper-container .swiper-wrapper a > img {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #e4e4e4;
+}
+
+.container #pager .university {
+    margin: 40px auto 0 auto;
+}
+
+.container #pager .university .swiper-car-box {
+    border: 1px solid #E4E4E4;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container #pager .university .swiper-car-box .swiper-wrapper a {
+    width: 136.857px;
+    position: relative;
+    text-align: center;
+    height: 305px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.container #pager .university .swiper-car-box .swiper-wrapper a img {
+    width: 110px;
+    height: 110px;
+}
+
+.container #pager .report {
+    margin: 40px auto 0 auto;
+}
+
+.container #pager .report .strategy2 {
+    border: 1px solid #E4E4E4;
+    height: 90px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container #pager .report .strategy2 .startegy-box {
+    overflow: hidden;
+}
+
+.container #pager .report .strategy2 .startegy-box .swiper-container .swiper-wrapper a {
+    text-decoration: none;
+    width: 159.667px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+.container #pager .report .strategy2 .startegy-box .swiper-container .swiper-wrapper a img {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #e4e4e4;
+}
+
+.swiper-container {
+    height: 305px;
+    width: 100%;
+}
+
+.swiper-container,
+.swiper-container2 {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+#banner-left,
+#banner-left2,
+#banner-left3 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#banner-right,
+#banner-right2,
+#banner-right3 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#banner-left,
+#banner-left2,
+#banner-left3,
+#banner-left4 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#banner-right,
+#banner-right2,
+#banner-right3,
+#banner-right4 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+.arrow-right {
+    background: url(../images/banner-right_a0bdd7d.png) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.arrow-left {
+    background: url(../images/banner-left_fe0df34.png) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.container .footer {
+    margin-top: 50px;
+}
+
+.container .footer .jkinfor-block {
+    background: #fafafa;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container .footer .jkinfor-block .jkinfor {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.container .footer .jkinfor a {
+    color: gray;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.container .footer .jkinfor a:hover {
+    color: #35b558;
+}
+
+.container .footer .jkinfor dl {
+    width: 185px;
+    padding-left: 30px;
+    color: gray;
+    margin: 25px 0;
+    float: left;
+    border-left: 1px solid #E4E4E4;
+    min-height: 175px;
+    list-style: none;
+}
+
+.container .footer .jkinfor dl dt {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.container .footer .jkinfor dl dd {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.container .footer .search-share {
+    width: 260px;
+    float: left;
+    min-height: 226px;
+    border-left: 1px solid #E4E4E4;
+    padding: 20px 0 0 40px;
+}
+
+.container .footer .search-share .jktxt {
+    font-size: 15px;
+    color: #35b558;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.container .footer .search-share .app-download > a {
+    padding-left: 0;
+}
+
+.container .footer .search-share .app-download img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+.container .footer .search-share .app-download strong {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.container .footer .search-share .app-download p {
+    font-size: 14px;
+    color: gray;
+    background: url(../images/more-icon_d39346f.png) 160px center no-repeat;
+    background-size: 7px 13px;
+}
+
+.container .footer .search-share .app-download a:hover p,
+.container .footer .search-share .app-download a:hover strong {
+    color: #35b558;
+}
+
+.container .footer .search-share .share {
+    margin-top: 15px;
+}
+
+.container .footer .search-share .share a {
+    background: url(../images/icon_7f8b929.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.container .footer .search-share .share a.sina-icon {
+    background-position: -23px 0;
+}
+
+.container .footer .search-share .share a.tieba-icon {
+    background-position: -145px 0;
+}
+
+.container .footer .search-share .share a.qq-icon {
+    background-position: -23px -82px;
+}
+
+.container .footer .search-share .share a.qq-icon .weinxinpop {
+    display: none;
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    z-index: 200;
+}
+
+.container .footer .search-share .share a.sina-icon:hover {
+    background-position: -23px -38px;
+}
+
+.container .footer .search-share .share a.tieba-icon:hover {
+    background-position: -145px -39px;
+}
+
+.container .footer .search-share .share a.qq-icon:hover {
+    background-position: -23px -120px;
+}
+
+.container .footer .search-share .share a.qq-icon:hover .weinxinpop {
+    display: block;
+}
+
+.container .footer .kefu-online {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+.container .footer .kefu-online a {
+    display: block;
+    padding: 0;
+}
+
+.container .footer .kefu-online .kefu-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    background: url(../images/kefu_8edc734.png) no-repeat -40px 0/80px 40px;
+    background-position: 0 0;
+}
+
+.container .footer .kefu-online a:hover h5,
+.container .footer .kefu-online a:hover p {
+    color: #35b558;
+}
+
+.container .footer .kefu-online h5 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+
+.container .footer .kefu-online p {
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.container .footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+.container .footer .copyright strong {
+    font-weight: 400;
+}
+
+.container .footer .copyright a {
+    color: #999;
+    text-decoration: none;
+}
+
+.container .footer .copyright a:hover {
+    color: #35b558;
+}
+
+.gotop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.gotop span {
+    cursor: pointer;
+}
+
+.gotop span.top {
+    display: block;
+    background: url(../images/gotop_d19051b.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+}
+
+.gotop span.top:hover {
+    background: rgba(0, 0, 0, 0) url(../images/gotop2_3c1a479.jpg) no-repeat scroll 0 0 / 34px 103px;
+}
+
+.gotop span.erwma {
+    position: relative;
+    display: block;
+    background: url(../images/gotop_d19051b.jpg) 0 -34px no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 35px;
+}
+
+.gotop span.erwma:hover {
+    background: rgba(0, 0, 0, 0) url(../images/gotop2_3c1a479.jpg) no-repeat scroll 0 -34px / 34px 103px;
+}
+
+.gotop span.erwma:hover img {
+    display: block;
+}
+
+.gotop div.jk-app {
+    position: relative;
+    display: block;
+    background: #f7f7f7 url(../images/phone-1_b9a83cb.png) center center no-repeat;
+    background-size: 12px 24px;
+    width: 34px;
+    height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.gotop div.jk-app:hover {
+    background: #f7f7f7 url(../images/phone-2_3e87776.png) no-repeat scroll center center / 12px 24px;
+}
+
+.gotop div.jk-app:hover .appewm {
+    display: block;
+}
+
+.gotop div.jk-app .appewm {
+    background: url(../images/appewm_72cb766.png) center center no-repeat;
+    background-size: 100%;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+
+.gotop span.erwma img,
+.gotop div.jk-app img {
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+
+.gotop a.diaocha {
+    display: block;
+    background: url(../images/gotop_d19051b.jpg) 0 -68px no-repeat;
+    background-size: 34px 101px;
+    width: 34px;
+    height: 34px;
+}
+
+.gotop a.diaocha:hover {
+    background: rgba(0, 0, 0, 0) url(../images/gotop2_3c1a479.jpg) no-repeat scroll 0 -68px / 34px 101px;
+}
+
+.gotop a.qq-online {
+    position: relative;
+    display: block;
+    background: #f7f7f7 url(../images/kfu_ca37db8.png) center center no-repeat;
+    width: 34px;
+    height: 35px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.gotop a.qq-online:hover span.kefu {
+    display: block;
+}
+
+.gotop a.qq-online1 {
+    position: relative;
+    display: block;
+    background: #f7f7f7 url(../images/kfu1_3dd1509.png) center center no-repeat;
+    width: 34px;
+    height: 35px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.gotop a.qq-online .kefu {
+    position: absolute;
+    padding: 5px;
+    background: #f7f7f7;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    width: 180px;
+    left: -190px;
+    display: none;
+}
+
+.gotop a.qq-online .kefu i {
+    height: 20px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #f7f7f7;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 12px;
+}
+
+.pewm2,
+.pewm3 {
+    font-size: 12px;
+    color: #252525;
+}
+
+.pewm2,
+.pewn3 {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 240px;
+    width: 105px;
+    height: 120px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.pewm3 {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 450px;
+    width: 105px;
+    height: 120px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.pewm2 .close,
+.pewm3 .close {
+    position: absolute;
+    top: -5px;
+    right: -13px;
+    z-index: 2200;
+    width: 14px;
+    height: 14px;
+    display: block;
+    background: url(../images/close4_e9b7521.png) center center no-repeat;
+    background-size: 10px auto;
+}
+
+.pewm3 .close {
+    right: -13px;
+    cursor: pointer;
+}
+
+.lesson-right-show .free-box button:active,
+.lesson-right-show .free-box button:focus,
+.lesson-right-show .free-box button:hover {
+    background: #35b558;
+    color: #fff;
+    border-color: #35b558;
+}

@@ -1,0 +1,69 @@
+extends ./layout
+block content
+  div.col-sm-9.col-md-10.col-xs-12
+    h1.page-header 文章列表
+    form.form-inline
+      div.form-group
+        label 分类查找
+        select.form-control.s_type(name='type')
+          option(value='') 全部
+          each t in types
+            if type && t.id == type
+              option(value=t.id, selected='selected')= t.name
+            else
+              option(value=t.id)= t.name
+    div.table-responsive
+      table.table.table-striped.table-hover
+        thead
+          tr
+            th ID
+            th 文章标题
+            th 分类
+            th 来源
+            th 发布日期
+            th 操作
+        tbody
+          each article in page.data
+            tr
+              td= article.id
+              td= article.title
+              td= article.type_name
+              td= article.source
+              td= moment(article.publishtime).format('YYYY-MM-DD HH:mm:ss')
+              td
+                a.btn.btn-primary(href='/admin/article/edit/' + article.id, role='button') 编辑
+                button.btn.btn-danger.btn-del(type='button', data-toggle='modal', data-target=".del-modal" data-delid=article.id) 删除
+      nav.mypage
+        ul.pagination(data-page=page.page, data-totalpage=page.totalPage)
+          if type
+            li.formerly
+              a(href='?type=#{type}&pn=1') 首页
+            li.formerly
+              a(href= '?type=#{type}&pn=' + (page.page - 1)) 上一页
+            li.future
+              a(href= '?type=#{type}&pn=' + (page.page - 0 + 1)) 下一页
+            li.future
+              a(href= '?type=#{type}&pn=' + page.totalPage) 末页
+          else
+            li.formerly
+              a(href='?pn=1') 首页
+            li.formerly
+              a(href= '?pn=' + (page.page - 1)) 上一页
+            li.future
+              a(href= '?pn=' + (page.page - 0 + 1)) 下一页
+            li.future
+              a(href= '?pn=' + page.totalPage) 末页
+  div.modal.fade.del-modal(tabindex='-1', role='dialog')
+    div.modal-dialog.modal-sm
+      div.modal-content
+        div.modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+          h4.modal-title 删除确认
+        div.modal-body
+          h3 您确定要删除吗？
+        div.modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') 取消
+          button.btn.btn-danger.btn-del2(type='button') 确认删除
+  script(type='text/javascript', src='/javascripts/admin/article.js')
+            

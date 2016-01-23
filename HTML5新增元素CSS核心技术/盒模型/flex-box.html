@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.con{
+		display: -webkit-flex;
+		width: 600px;
+		height: 600px;
+		-webkit-flex-direction: column; 
+		-webkit-flex-orient:green;
+
+	}
+	.first{
+		height: 100px;
+		-webkit-flex:1;
+		-webkit-order:3;
+		background-color: orange;
+	}
+	#second{
+		height: 100px;
+		-webkit-flex:1;
+		-webkit-order:2;
+		background-color: aquamarine;
+	}
+	#three{
+		height: 200px;
+		-webkit-flex:1;
+		-webkit-order:1;
+		background-color: coral;
+	}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="first">第一个</div>
+		<div id="second">第二个</div>
+		<div id="three">第三个</div>
+	</div>
+</body>
+</html>

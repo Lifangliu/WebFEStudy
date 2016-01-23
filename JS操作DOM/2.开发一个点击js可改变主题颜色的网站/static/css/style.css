@@ -1,0 +1,1066 @@
+html,
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.g-ib {
+    display: inline-block;
+}
+
+.ftc_green {
+    color: #0AA770;
+}
+
+.bac_green {
+    background: #0AA770;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*容器*/
+
+.container {
+    width: 100%;
+    min-width: 1190px;
+    height: auto;
+    margin: 0 auto;
+    background: #F9F9F9;
+    font: 14px/100% arial, "Hiragino Sans GB", "Hiragino Sans GB W3", \5b8b\4f53;
+}
+
+
+/*定宽*/
+
+.fixedwidth {
+    width: 1190px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/*顶部*/
+
+.container .roof {
+    border-bottom: 1px solid #F3F3F3;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Tahoma';
+}
+
+.container .roof .fixedwidth .roof-wrap {
+    height: 60px;
+    width: 100%;
+    background: #FDFDFD;
+}
+
+
+/*logo*/
+
+.container .roof .fixedwidth .logo {
+    float: left;
+}
+
+.container .roof .fixedwidth .logo a img {
+    width: 190px;
+    height: 60px;
+}
+
+
+/*设置为首页*/
+
+.container .roof .fixedwidth .sethomepage {
+    margin: 20px 22px 0 0;
+    float: left;
+}
+
+.container .roof .fixedwidth .sethomepage a {
+    display: block;
+    width: 60px;
+    height: 25px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: url('../images/index_widthlg.png') no-repeat -20px -172px;
+}
+
+.container .roof .fixedwidth .sethomepage a:hover {
+    text-decoration: underline;
+}
+
+
+/*天气预报*/
+
+.container .roof .fixedwidth .weather {
+    float: left;
+}
+
+.container .roof .fixedwidth .weather a {
+    padding: 0 10px 0 9px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    text-decoration: none;
+}
+
+.container .roof .fixedwidth .weather:hover {
+    background: #F7F7F7;
+}
+
+.container .roof .fixedwidth .weather a.location span.weahtercity-arrow {
+    width: 9px;
+    height: 6px;
+    background: url('../images/index_widthlg.png') no-repeat -52px -97px;
+    _background: url('../images/index_widthlg.png') no-repeat -52px -95px;
+    vertical-align: middle;
+    _overflow: hidden;
+    _height: 9px;
+}
+
+.container .roof .fixedwidth .weather a.forecast .weahterinfo-icon {
+    line-height: 60px;
+    vertical-align: middle;
+    width: 26px;
+    height: 60px;
+    background-position: 0 13px;
+    background-repeat: no-repeat;
+    background-image: url(../images/weather/v1/a16.png);
+}
+
+.container .roof .fixedwidth .weather a.forecast .weahterinfo-temperature {
+    font-family: 'arial';
+}
+
+
+/*日期*/
+
+.container .roof .fixedwidth .calendar {
+    float: left;
+}
+
+.container .roof .fixedwidth .calendar a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.container .roof .fixedwidth .calendar a:hover {
+    background: #F7F7F7;
+}
+
+.container .roof .fixedwidth .calendar a .calendarinfo-date {
+    width: 24px;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'arial';
+    background: url('../images/index_widthlg.png') no-repeat -20px -62px;
+}
+
+
+/*links*/
+
+.container .roof .fixedwidth .links {
+    float: right;
+}
+
+.container .roof .fixedwidth .links ul {
+    list-style: none;
+}
+
+.container .roof .fixedwidth .links ul li {
+    float: left;
+}
+
+.container .roof .fixedwidth .links ul li:hover {
+    background: #F7F7F7;
+}
+
+.container .roof .fixedwidth .links ul li a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 33px;
+    padding-right: 9px;
+    text-decoration: none;
+    color: #999;
+    background-image: url('../images/index_widthlg.png');
+    background-repeat: no-repeat;
+}
+
+.container .roof .fixedwidth .links ul li.login a {
+    background-position: -30px -110px;
+}
+
+.container .roof .fixedwidth .links ul li.email a {
+    background-position: -96px -108px;
+}
+
+.container .roof .fixedwidth .links ul li.browser a {
+    background-position: -162px -109px;
+}
+
+.container .roof .fixedwidth .links ul li.skin a {
+    background-position: -244px -108px;
+}
+
+
+/*propaganda*/
+
+.container .roof .fixedwidth .propaganda {
+    float: right;
+    border: 1px solid #D9D9D9;
+    border-top: none;
+    border-bottom: none;
+}
+
+.container .roof .fixedwidth .propaganda ul {
+    list-style: none;
+}
+
+.container .roof .fixedwidth .propaganda ul li.activate {
+    display: block;
+}
+
+.container .roof .fixedwidth .propaganda ul li {
+    display: none;
+}
+
+.container .roof .fixedwidth .propaganda ul li a {
+    text-decoration: none;
+}
+
+.container .roof .fixedwidth .propaganda ul li a img {
+    width: 220px;
+    height: 60px;
+    border: none;
+}
+
+
+/*搜索条*/
+
+.container .search-panel-box {
+    width: 100%;
+    height: 82px;
+    background: #FAFAFA;
+    overflow: hidden;
+    /*宽度给了百分百最好都overflow一下，避免出现此类有滚动条或者其他兼容问题*/
+}
+
+.container .search-panel-box .search-panel {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 42px 0 0 166px;
+}
+
+.container .search-panel-box .search-panel .form-hook {
+    width: 800px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.container .search-panel-box .search-panel .form-hook .search {
+    width: 800px;
+    height: 40px;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .bdlogo {
+    float: left;
+    margin-right: 20px;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-ipt {
+    float: left;
+    width: 539px;
+    height: 38px;
+    border: 1px solid #8A8A8A;
+    border-right: none;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-ipt .crtp {
+    display: block;
+    float: left;
+    padding: 0 10px;
+    width: 38px;
+    height: 38px;
+    font: normal 12px/38px simsun;
+    text-decoration: none;
+    color: #999;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-ipt .crtp span {
+    display: block;
+    float: left;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-ipt .crtp .arrow {
+    display: block;
+    float: left;
+    width: 9px;
+    height: 6px;
+    margin: 16px 0 0 5px;
+    background: url('../images/index_widthlg.png') -52px -97px;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-ipt input {
+    width: 448px;
+    height: 36px;
+    font: 16px arial;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-sub {
+    float: left;
+}
+
+.container .search-panel-box .search-panel .form-hook .search .search-sub input[type='submit'] {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 40px;
+    background: url('../images/index_widthlg.png') no-repeat -20px 0;
+}
+
+.container .search-panel-box .search-panel .color-sel {
+    width: 120px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.container .search-panel-box .search-panel .color-sel ul {
+    list-style: none;
+}
+
+.container .search-panel-box .search-panel .color-sel ul li {
+    margin: 0 4px;
+    float: left;
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border: 1px solid #fff;
+}
+
+.container .search-panel-box .search-panel .color-sel ul li:hover {
+    cursor: pointer;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.container .search-panel-box .search-panel .color-sel ul li.orange {
+    background: #fb3;
+}
+
+.container .search-panel-box .search-panel .color-sel ul li.blue {
+    background: #33b5e5;
+}
+
+.container .search-panel-box .search-panel .color-sel ul li.red {
+    background: #f44;
+}
+
+.container .search-panel-box .search-panel .color-sel ul li.green {
+    background: #9c0;
+}
+
+.container .search-panel-box .search-panel .color-sel ul li.purple {
+    background: #a6c;
+}
+
+
+/*热搜*/
+
+.container .hotsearchcon {
+    width: 100%;
+    height: auto;
+    padding-top: 6px;
+}
+
+.container .hotsearchcon .hotsearch {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container .hotsearchcon .hotsearch ul {
+    list-style: none;
+    display: inline-block;
+    margin-left: 102px;
+}
+
+.container .hotsearchcon .hotsearch ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.container .hotsearchcon .hotsearch ul li a {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    text-decoration: none;
+}
+.container .hotsearchcon .hotsearch ul li a.label{
+    color: #0AA770;
+}
+.container .hotsearchcon .hotsearch ul li a.label:hover{
+    color: #0AA770;
+}
+.container .hotsearchcon .hotsearch ul li a.hot {
+    color: #f30;
+}
+
+.container .hotsearchcon .hotsearch ul li a:hover {
+    text-decoration: underline;
+    color: #f30;
+}
+
+
+/*hao123-body*/
+
+.container .hao123-body {
+    width: 100%;
+    height: auto;
+}
+
+.container .hao123-body .menu {
+    width: 1190px;
+    height: 41px;
+    margin: 26px auto 0 auto;
+    border-top: 2px solid #0AA770;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.container .hao123-body .menu ul {
+    list-style: none;
+}
+
+.container .hao123-body .menu ul li {
+    float: left;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    width: 110px;
+    background: #fff;
+}
+
+.container .hao123-body .menu ul li.home {
+    width: 80px;
+}
+
+.container .hao123-body .menu ul li.active {
+    background: #0AA770;
+}
+
+.container .hao123-body .menu ul li.active a {
+    color: #fff;
+}
+
+.container .hao123-body .menu ul li.active a:hover {
+    color: #fff;
+}
+
+.container .hao123-body .menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container .hao123-body .menu ul li a:hover {
+    color: #0AA770;
+}
+
+.container .hao123-body .menu ul li a {
+    border-right: 0;
+    text-align: center;
+    position: relative;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+}
+
+.container .hao123-body .menu ul li.menu-split {
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: url(../images/menus_split.png) center left no-repeat;
+}
+
+
+/*main*/
+
+.container .hao123-body .layout-content {
+    width: 1190px;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.container .hao123-body .layout-content .left-wrap {
+    float: left;
+    width: 278px;
+    height: auto;
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner {
+    width: 278px;
+    height: 138px;
+    background: #FCFCFC;
+    border: 1px solid #F2F2F2;
+    position: relative;
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner .wslider-inner .wslider-item a.topimg {
+    text-decoration: none;
+    border: none;
+    width: 278px;
+    height: 70px;
+    margin: 0;
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner .wslider-inner .wslider-item a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 8px;
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner .wslider-inner .wslider-item a:hover {
+    color: #f50;
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner .wslider-arrow {
+    display: none;
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner .wslider-arrow .arrow-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 42px;
+    background: #000 url(../images/index_menus_widthlg.png) 0 -422px;
+    margin-top: -21px;
+    cursor: pointer;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.container .hao123-body .layout-content .left-wrap .leftbanner .wslider-arrow .arrow-next {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 42px;
+    right: 0;
+    background: #000 url(../images/index_menus_widthlg.png) -31px -422px;
+    margin-top: -21px;
+    cursor: pointer;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab {
+    margin-top: 14px;
+    width: 278px;
+    height: 263px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar {
+    padding: 9px 0 10px 18px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul {
+    list-style: none;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li {
+    float: left;
+    width: 128px;
+    margin-bottom: 11px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.clbottom {
+    margin-bottom: 0;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.tips {
+    width: 260px;
+    height: 36px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.tips .tvtip {
+    width: 220px;
+    height: 24px;
+    background-color: #f7f7f5;
+    border: 1px solid #d9d9d9;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    position: absolute;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.tips .tvtip .tip-closed {
+    background: url('../images/tip-icon.png') 0 -16px no-repeat;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.tips .tips-toparrow {
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: 12px;
+    left: 93px;
+    height: 8px;
+    background: url('../images/tip-icon.png') -16px 0 no-repeat;
+    z-index: 20;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.tips .tvtip .tip-closed:hover {
+    background-position: 0 0;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li.tips .tvtip .tvtip-txtlink {
+    font-size: 12px;
+    line-height: 2;
+    color: #ff5601;
+    text-decoration: none;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem {}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+    display: block;
+    float: left;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem span {
+    float: left;
+    display: block;
+    padding: 0 5px;
+    color: #999;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .star-icon {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url('../images/index_menus_widthlg.png') no-repeat;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-tv {
+    background-position: -20px -81px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-game {
+    background-position: -19px -301px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-movie {
+    background-position: -20px -160px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-comic {
+    background-position: -20px -381px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-toutiao {
+    background-position: -20px -100px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-travel {
+    background-position: -20px -261px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-caipiao {
+    background-position: -20px -21px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-gaoxiao {
+    background-position: -20px -121px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-tuan {
+    background-position: -20px -281px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-music {
+    background-position: -20px -362px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-life {
+    background-position: -20px -221px;
+}
+
+.container .hao123-body .layout-content .left-wrap .servicetab .box-starbar ul li .baritem .i-food {
+    background-position: -19px -42px;
+}
+
+.container .hao123-body .layout-content .right-wrap {
+    float: right;
+    width: 900px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite {
+    width: 898px;
+    height: 269px;
+    background: #FCFCFC;
+    border: 1px solid #AADDBB;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd {
+    list-style: none;
+    width: 868px;
+    height: 100px;
+    padding-left: 23px;
+    padding-top: 18px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li {
+    float: left;
+    width: 112px;
+    height: 33px;
+    margin-right: 30px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li a {
+    display: block;
+    float: left;
+    color: #000;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li a:hover {
+    color: #f50;
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 5px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-right: 4px;
+    background-image: url(../images/urlicon/defaultIcon1229.png);
+    background-repeat: no-repeat;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.baidu {
+    background-image: url(../images/urlicon/7656.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.sina {
+    background-position: 2px -278px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.sohu {
+    background-position: 2px -318px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.qq {
+    background-position: 2px -38px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.wangyi {
+    background-position: 2px -157px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.iqiyi {
+    background-image: url(../images/urlicon/1821.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.tmall {
+    background-image: url(../images/urlicon/10138.2.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.ifeng {
+    background-position: 2px -238px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.taobao {
+    background-position: 2px -358px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.game {
+    background-image: url(../images/urlicon/game0331.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.game4399 {
+    background-position: 2px 2px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.xinhua {
+    background-image: url(../images/urlicon/10435.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.jd {
+    background-image: url(../images/urlicon/21.1.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.juhuasuan {
+    background-image: url(../images/urlicon/8.411.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.te {
+    background-image: url(../images/urlicon/6282.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.hao123ys {
+    background-image: url(../images/urlicon/1419388771.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.autohome {
+    background-position: 2px -518px
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.site-bd li i.qunaer {
+    background-image: url(../images/urlicon/2554.png);
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite {
+    list-style: none;
+    width: 838px;
+    border-top: 1px solid #F0F0F0;
+    margin: 0 auto;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite li {
+    float: left;
+    width: 139px;
+    margin: 10px 0 4px 0;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite li a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite li a.red {
+    color: #f50;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite li a:hover {
+    color: #f50;
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite li a.green {
+    color: #118850;
+}
+
+.container .hao123-body .layout-content .right-wrap .hao123-famoussite ul.box-famoussite li a.green:hover {
+    color: #118850;
+}
+
+.container .hao123-body .layout-content .right-wrap .layout-adbar {
+    width: 898px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.container .hao123-body .layout-content .right-wrap .layout-adbar a {
+    color: #3b5998;
+    text-decoration: none;
+    outline: 0;
+    font-size: 12px;
+    margin: 0 6px;
+}
+
+.container .hao123-body .layout-content .right-wrap .layout-adbar a:hover {
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main {
+    background: #FCFCFC;
+    width: 898px;
+    height: 114px;
+    border: 1px solid #CECECE;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .youlike {
+    float: left;
+    width: 20px;
+    height: 60px;
+    margin-top: 24px;
+    display: block;
+    background: url(../images/new_index_icon.png);
+    background-position: 0 0;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .changebtn {
+    float: right;
+    width: 21px;
+    height: 61px;
+    margin-top: 24px;
+    margin-right: -1px;
+    display: block;
+    background: url(../images/new_index_icon.png);
+    background-position: 0 -145px;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .changebtn:hover {
+    background: url(../images/new_index_icon.png);
+    background-position: -21px -145px;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon {
+    float: left;
+    width: 858px;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites {
+    margin: 12px 0 0 20px;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row {
+    margin-top: 18px;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row .title {
+    float: left;
+    position: relative;
+}
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row .title i.red-icon{
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 29px;
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/new_index_icon.png);
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row .title a {
+    color: #118850;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row .title a:hover {
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row ul {
+    float: left;
+    margin-left: 32px;
+    list-style: none;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row ul li {
+    float: left;
+    margin-right: 15px;
+    width: 88px;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row ul li a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row ul li a:hover {
+    color: #f50;
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row ul li a.red {
+    color: #f50;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row ul li a.red:hover {
+    color: #f50;
+    text-decoration: underline;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row a {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+.container .hao123-body .layout-content .right-wrap .bottom-main .glcon .sites .row a:hover {
+    color: #f50;
+    text-decoration: underline;
+}

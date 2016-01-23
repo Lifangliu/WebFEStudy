@@ -1,0 +1,217 @@
+/*容器*/
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+
+/*计算器*/
+
+.container .calculator {
+    width: 286px;
+    height: 520px;
+    border: 1px solid red;
+    margin: 30px auto;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, .3);
+}
+
+
+/*显示区*/
+
+.container .calculator .display {
+    background: #F2F2F2;
+    height: 250px;
+}
+
+
+/*标题*/
+
+.container .calculator .display .title h1 {
+    margin: 0;
+    padding: 5px 0;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "微软雅黑";
+}
+
+
+/*操作区*/
+
+.container .calculator .operation {
+    background: #E6E6E6;
+    height: 270px;
+}
+
+.container .calculator .operation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .calculator .operation ul li {
+    display: block;
+    float: left;
+    height: 54px;
+    width: 25%;
+    line-height: 54px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container .calculator .operation ul li:hover {
+    background: #CFCFCF;
+    cursor: pointer;
+}
+
+.container .calculator .operation ul li.equal:hover {
+    color: #fff;
+    background: #ff4343;
+}
+
+.container .calculator .display .title .top {
+    width: 100%;
+    height: 40px;
+}
+
+.container .calculator .display .title .top .left {
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.container .calculator .display .title .top .left:hover {
+    background: #dadada;
+    cursor: pointer;
+}
+
+.container .calculator .display .title .top .middle {
+    width: 60%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.container .calculator .display .title .top .right {
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.container .calculator .display .title .top .right:hover {
+    background: #dadada;
+    cursor: pointer;
+}
+
+.container .calculator .display .title .formula {
+    width: 100%;
+    height: 30px;
+}
+
+.container .calculator .display .title .formula .screen {
+    float: left;
+    width: 100%;
+}
+
+.container .calculator .display .title .formula .screen span {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 236px;
+    color: #898989;
+    letter-spacing: 2px;
+    text-align: right;
+    display: block;
+}
+
+.container .calculator .display .title .formula .flbtn {
+    float: left;
+    width: 22px;
+    margin-left: -100%;
+    color: #F00;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.container .calculator .display .title .formula .frbtn {
+    float: left;
+    width: 22px;
+    margin-left: -22px;
+    color: #F00;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.container .calculator .display .title .result {
+    height: 64px;
+    padding-right: 25px;
+    text-align: right;
+    line-height: 64px;
+    font-size: 49px;
+    font-weight: 900;
+}
+
+.container .calculator .display .title .memory {
+    height: 44px;
+}
+
+.container .calculator .display .title .memory ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .calculator .display .title .memory ul li {
+    height: 44px;
+    line-height: 44px;
+    width: 16.66666%;
+    float: left;
+    color: #c2c2c2;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container .calculator .display .title .memory ul li.on {
+    color: #616161;
+}
+
+.container .calculator .display .title .memory ul li.on:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+.container .calculator .display .title .senior {
+    height: 45px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.container .calculator .display .title .senior ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .calculator .display .title .senior ul li {
+    width: 25%;
+    height: 45px;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container .calculator .display .title .senior ul li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}

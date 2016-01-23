@@ -1,0 +1,25 @@
+{
+  "name": "mywebsite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "async": "^1.5.0",
+    "express-session": "^1.12.1",
+    "moment": "^2.10.6",
+    "multiparty": "^4.1.2",
+    "mysql": "^2.10.0",
+    "mysql-activerecord": "^0.8.6"
+  }
+}

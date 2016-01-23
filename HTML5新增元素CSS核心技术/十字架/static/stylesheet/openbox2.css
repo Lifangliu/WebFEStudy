@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* box width=(100px + 1px border x 2) * 3 + inline-block gap 8px * 2 */
+    width: 322px;
+    /* box height=(100px + 1px border x 2) * 3 + row margin-top 8px * 2 */
+    height: 322px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*减去自身宽度一半*/
+    margin-top: -161px;
+    margin-left: -161px;
+}
+
+.row {
+    margin-top: 8px;
+    text-align: center;
+}
+
+#first {
+    /*去掉第一行margin-top*/
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    /*请问老师,如何去除或显示定义inline-block间距,在chrome中为8px,firefox为4px*/
+    display: inline-block;
+    opacity: 0.9;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+/*box背景图*/
+
+.box-doraemon {
+    background: url(../images/doraemon2.png) no-repeat 2px center;
+}
+
+
+/*box颜色定义*/
+
+.box-primary {
+    background-color: #337ab7;
+}
+
+.box-default {
+    background-color: #fff;
+}
+
+.box-success {
+    background-color: #5cb85c;
+}
+
+.box-info {
+    background-color: #5bc0de;
+}
+
+.box-danger {
+    background-color: #d9534f;
+}

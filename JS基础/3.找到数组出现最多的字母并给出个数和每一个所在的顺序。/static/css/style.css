@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.container div {
+    width: 300px;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+.container div strong {
+    color: #f00;
+}
+
+.container #original {
+    color: #337AB7;
+}
+
+.container #most {
+    color: #D9534F;
+}
+
+.container #location {
+    color: #46B8DA;
+}

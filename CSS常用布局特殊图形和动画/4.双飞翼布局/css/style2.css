@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.outer{
+	width:500px;
+	padding:50px;
+	height:auto;
+	min-height:500px;
+	margin:0 auto;
+	background:#DF0003;	
+	background:-moz-linear-gradient(#6274FF,#075792);
+	background:-webkit-gradient(linear,center top,center bottom,from(#6274FF),to(#075792));
+	background:-webkit-linear-gradient(#6274FF,#075792);
+	background:-o-linear-gradient(#6274FF,#075792);
+	background:-ms-linear-gradient(#6274FF,#075792);
+	background:linear-gradient(#6274FF,#075792);
+}
+.Hornsl{
+	width:10px;
+	height:50px;	
+	background:#22CD00;
+	border-radius:50px;
+	}
+.head{
+	width: 160px;
+	height: 100px;
+	background:#22CD00;
+	border-top-left-radius:80px;
+	border-top-right-radius:80px;
+	
+}
+.eyel{
+	width: 15px;
+    height: 15px;
+    background: #FFF;
+    border-radius: 50px;
+    transform: translate(42px,50px);
+	}
+.eyer{
+	width: 15px;
+    height: 15px;
+    background: #FFF;
+    border-radius: 50px;
+    transform: translate(100px,38px);	
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

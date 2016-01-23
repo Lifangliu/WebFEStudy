@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /*max width = 100 * 3 + 4 * 2 */
+    width: 308px;
+    /*max height = 100 * 3 + 4 * 2 */
+    height: 308px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*left top 减去自身一半*/
+    margin-left: -154px;
+    margin-top: -154px;
+}
+
+.container > div {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+.first {
+    /*一个box的宽+缝隙4px*/
+    margin-left: 104px;
+    background-color: #3778A3;
+}
+
+.second {
+    background-color: #61397E;
+    float: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.third {
+    background: url(../images/doraemon1.png) no-repeat 2px center;
+    overflow: hidden;
+    float: left;
+    margin: 4px;
+}
+
+.fourth {
+    background-color: #36973F;
+    overflow: hidden;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.fifth {
+    /*一个box的宽+缝隙4px*/
+    margin-left: 104px;
+    background-color: #9A2E31;
+}

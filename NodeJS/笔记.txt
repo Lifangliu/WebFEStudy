@@ -1,0 +1,162 @@
+nodejs一般是当成一条用户命令执行的，当用户断开客户连接，运用也就停了，很烦人。如何让nodejs应用当成服务，在后台执行呢？
+
+最简单的办法：
+
+$ nohup node app.js &
+但是，forever能做更多的事情，比如分别记录输出和错误日志，比如可以在js中作为api使用。
+
+$ sudo npm install forever -g   #安装
+$ forever start app.js          #启动
+$ forever stop app.js           #关闭
+$ forever start -l forever.log -o out.log -e err.log app.js   #输出日志和错误
+命令语法及使用 https://github.com/nodejitsu/forever
+
+===================================
+
+Node.js的这种设计虽然有利于提高性能，却不利于开发调试，因为我们在开发过程中总是希望修改后立即看到效果，而不是每次都要终止进程并重启。supervisor 可以帮助你实现这个功能，它会监视你对代码的改动，并自动重启 Node.js。
+
+supervisor的安装也很简单：
+
+直接用npm安装既可，键入命令: npm -g install supervisor
+
+这里注意一点的就是，supervisor必须安装到全局，如果你不安装到全局，错误命令会提示你安装到全局。
+
+如果不想安装到默认的全局,也可以自己修改全局路径到当前路径
+
+npm config set prefix "路径"
+
+安装完以后就可以用supervisor 来启动服务了。
+
+supervisor app.js
+
+==============================================
+
+Express 应用生成器
+
+通过应用生成器工具 express 可以快速创建一个应用的骨架。
+
+通过如下命令安装：
+
+$ npm install express-generator -g
+-h 选项可以列出所有可用的命令行选项：
+
+$ express -h
+例如，下面的示例就是在当前工作目录下创建一个命名为 myapp 的应用。
+
+$ express myapp
+然后安装所有依赖包：
+
+$ cd myapp 
+$ npm install
+启动这个应用（MacOS 或 Linux 平台）：
+
+$ DEBUG=myapp npm start
+Windows 平台使用如下命令：
+
+> set DEBUG=myapp & npm start
+然后在浏览器中打开 http://localhost:3000/ 网址就可以看到这个应用了。i
+
+
+================================================
+
+REST
+什么是rest
+参数都是url
+例：www.baidu.com/aaa/bbbb/cccc/ddd/20/
+get 、 post 、 put 、delete
+一个接口能接受四种请求，返回json
+
+nodejs  -> restify 框架
+
+
+======================================================
+orm:
+
+npm install orm
+
+轻量级：
+npm install mysql-activerecord
+
+基础库
+npm install mysql
+
+
+可以用promise去处理层级嵌套的回调
+
+==================================
+yahoo 34 军规
+
+1.减少http请求数
+
+前段工程化
+能用框架解决的问题能用自动化解决的问题
+不用人工干预
+
+一个页面有非常多的外部script 
+会造成网路堵塞
+建议
+请求合并
+请求少了 文件大了  25k以内
+权衡  保留3-4个
+
+使用雪碧图
+
+2.减少dns的查找次数
+	
+	不要让域太多
+	用dns预解析
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<link rel="dns-prefetch" href="http://bdimg.share.baidu.com" />
+	<link rel="dns-prefetch" href="http://nsclick.baidu.com" />
+	<link rel="dns-prefetch" href="http://hm.baidu.com" />
+	<link rel="dns-prefetch" href="http://eiv.baidu.com" />
+
+3.避免跳转
+
+4.可缓存的ajax
+	后端开启gzip压缩
+	减少dns
+	避免跳转
+	etags 缓存多久失效
+
+
+6.预加载
+
+	<link rel="prefetch alternate stylesheet" title="Designed for Mozilla" href="mozspecific.css" /> 
+	<link rel="next" href="2.html" /> 
+
+	<!-- 页面，可以使用绝对或者相对路径 --> 
+	<link rel="prefetch" href="page2.html" /> 
+	<!-- 图片，也可以是其他类型的文件 --> 
+	<link rel="prefetch" href="sprite.png" /> 
+
+7.控制dom元素数
+
+
+8.根据域名划分内容
+
+9.减少iframe
+  解决了第三方站点广告
+
+  缺点
+  即使iframe为空加载也需要时间 没有任何语意
+
+
+10.不要让页面出现404
+
+11.使用内容分发网路 cdn
+
+16.使用get做ajax
+
+17.样式置顶
+
+21.用link 代替 @import
+
+@import阻塞
+
+静态资源使用无cookie的域名
+
+少用cookie 
+
+
+30.js css 写到一个文件 (弃用)

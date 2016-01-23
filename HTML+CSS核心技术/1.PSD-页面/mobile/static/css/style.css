@@ -1,0 +1,708 @@
+html,
+body,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+
+/*标题start*/
+
+.container .roof {
+    background: #f0f0f0;
+    height: 70px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.container .roof .title {
+    float: left;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.container .roof .title h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.68em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container .roof .refresh {
+    float: left;
+    width: 18%;
+    height: auto;
+    margin-top: 24px;
+    margin-left: -100%;
+    text-align: right;
+}
+
+.container .roof .refresh img {
+    width: 37px;
+    height: auto;
+    cursor: pointer;
+}
+
+.container .roof .search {
+    float: left;
+    width: 16%;
+    height: auto;
+    margin-top: 24px;
+    margin-left: -16%;
+}
+
+.container .roof .search img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+/*标题end*/
+
+
+/*过滤排序菜单start*/
+.container .main-menu {
+    height: auto;
+}
+
+.container .main-menu ul.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .main-menu ul.menu-list li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
+
+.container .main-menu ul.menu-list li span {
+    font-size: 1.2em;
+    color: #272636;
+}
+
+.container .main-menu ul.menu-list li:hover {
+    background: #e3e3e3;
+}
+
+.container .main-menu ul.menu-list li.active {
+    background: #e3e3e3;
+}
+
+.container .main-menu ul.menu-list li.middle {
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+
+.container .main-menu ul.menu-list li ul.sub-menu-list li {
+    overflow: hidden;
+    float: none;
+    height: 48px;
+    line-height: 48px;
+}
+/*过滤排序菜单end*/
+
+
+/*banner start*/
+.container .banner {
+    width: 100%;
+}
+
+.container .banner img {
+    width: 100%;
+}
+/*banner end*/
+
+
+/*大按钮列表start*/
+.container .large-btns {
+    height: auto;
+}
+
+.container .large-btns ul.lbtn-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container .large-btns ul.lbtn-list li {
+    float: left;
+    width: 25%;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.container .large-btns ul.lbtn-list li a {
+    text-decoration: none;
+    display: block;
+}
+
+.container .large-btns ul.lbtn-list li a i {
+    display: block;
+}
+
+.container .large-btns ul.lbtn-list li a i img {
+    width: 66%;
+}
+
+.container .large-btns ul.lbtn-list li a span {
+    display: block;
+    font-size: .825em;
+    color: #686873;
+}
+/*大按钮列表end*/
+
+
+/*分类按钮组start*/
+.container .type-btns {
+    height: auto;
+}
+
+.container .type-btns ul.type-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .type-btns ul.type-list li {
+    float: left;
+    border-top: 10px solid #f0efef;
+    width: 50%;
+}
+
+.container .type-btns ul.type-list li.last {
+    margin-bottom: 8px;
+}
+
+.container .type-btns ul.type-list li a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: .4% solid #fff;
+}
+
+.container .type-btns ul.type-list li a img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 98.4%;
+    height: auto;
+    border-top: 8px solid #fff;
+    filter: url(blur.svg#blur);
+    /* FireFox, Chrome, Opera */
+    -webkit-filter: blur(2px);
+    /* Chrome, Opera */
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.container .type-btns ul.type-list li a:hover>img {
+    filter: url(blur.svg#blur);
+    /* FireFox, Chrome, Opera */
+    -webkit-filter: blur(0px);
+    /* Chrome, Opera */
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.container .type-btns ul.type-list li div.type-name {
+    width: 60%;
+    height: auto;
+    background: transparent;
+    border: 3px solid #fff;
+    float: left;
+    position: relative;
+    margin-top: -44%;
+    margin-left: 16%;
+}
+
+.container .type-btns ul.type-list li div.type-name a {
+    text-decoration: none;
+    display: block;
+    font-size: .9421em;
+    height: 1.878em;
+    line-height: 1.878em;
+    color: #0b9e54;
+    margin: .167em;
+    padding: 0 .25em;
+    background: #fff;
+    text-align: center;
+}
+/*分类按钮组end*/
+
+
+/*推荐商家start*/
+.container .recommend {
+    overflow: hidden;
+    width: 96.854%;
+    height: 196px;
+    border: 5px solid #f0efef;
+}
+
+.container .recommend .merchants {
+    width: 50%;
+    float: left;
+    height: 196px;
+    border-right: 5px solid #f0efef;
+}
+
+.container .recommend .merchants .hexagonal {
+    height: 118px;
+    margin: 8px auto;
+}
+
+.container .recommend .merchants h3 {
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: .9em;
+    color: #f69f07;
+    font-weight: 500;
+}
+
+.container .recommend .merchants h4 {
+    padding: 0;
+    margin: 0;
+    font-size: .7em;
+    margin-left: 15px;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+.container .recommend .merchants h5 {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    margin-right: 5px;
+    font-weight: 500;
+    color: #8e8d8c;
+    margin-top: 12px;
+}
+
+.container .recommend .articles {
+    float: left;
+    width: 48.3%;
+    height: 196px;
+}
+
+.container .recommend .articles .news {
+    height: 50%;
+    border-bottom: 5px solid #f0efef;
+}
+
+.container .recommend .articles .demand {
+    height: 50%;
+}
+
+.container .recommend .articles div .picture {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.container .recommend .articles div .picture img {
+    width: 76px;
+    margin: 10px auto;
+}
+
+.container .recommend .articles div .character {
+    width: 50%;
+    float: left;
+}
+
+.container .recommend .articles div .character h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: right;
+    color: #f96262;
+}
+
+.container .recommend .articles div .character h4 {
+    text-align: right;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+    font-weight: 500;
+}
+/*推荐商家end*/
+
+
+/*中间banner start*/
+.container .middle-banner {
+    overflow: hidden;
+    width: 96.854%;
+    height: auto;
+    border: 5px solid transparent;
+    text-align: center;
+}
+
+.container .middle-banner a {
+    text-decoration: none;
+}
+
+.container .middle-banner a img {
+    width: 100%;
+    border: 0;
+}
+/*中间banner end*/
+
+
+/*下间banner start*/
+.container .best-selling {
+    border-bottom: 5px solid #f0efef;
+}
+
+.container .best-selling .boom-title {
+    height: 40px;
+    line-height: 40px;
+    background: #f0efef;
+}
+
+.container .best-selling .boom-title span {
+    font-size: 20px;
+    color: #818181;
+    margin-left: 8px;
+}
+
+.container .best-selling .below-banner {
+    overflow: hidden;
+    width: 96.854%;
+    height: auto;
+    border: 5px solid transparent;
+    text-align: center;
+}
+
+.container .best-selling .below-banner a {
+    text-decoration: none;
+}
+
+.container .best-selling .below-banner a img {
+    width: 100%;
+    border: 0;
+}
+/*下间banner end*/
+
+
+/*商品列表start*/
+.container .goodslist {
+    margin-bottom: 10px;
+}
+
+.container .goodslist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .goodslist ul li {
+    display: block;
+    width: 100%;
+    height: 116px;
+    border-bottom: 5px solid #f0efef;
+}
+
+.container .goodslist ul li .thumbnail {
+    width: 40%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.container .goodslist ul li .thumbnail img {
+    width: 90%;
+    height: 90%;
+    margin: 5px auto;
+}
+
+.container .goodslist ul li .describe {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.container .goodslist ul li .describe .title {
+    height: 30%;
+}
+
+.container .goodslist ul li .describe .title h3 {
+    font-weight: 500;
+    font-size: .8em;
+    margin: 5px 6px 0 6px;
+    color: #272636;
+}
+
+.container .goodslist ul li .describe .price {
+    height: 66%;
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 34px;
+}
+
+.container .goodslist ul li .describe .price .money {
+    width: 77%;
+    height: 100%;
+    float: left;
+}
+
+.container .goodslist ul li .describe .price .money h4 {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: #f888b4;
+}
+
+.container .goodslist ul li .describe .price .money s {
+    color: #cdcccc;
+    font-size: .6em;
+}
+
+.container .goodslist ul li .describe .price .money span {
+    display: block;
+    color: #cdcccc;
+    font-size: .9em;
+}
+
+.container .goodslist ul li .describe .price .cart {
+    width: 18%;
+    height: 100%;
+    float: left;
+    background: url(../images/addcart.png) no-repeat;
+    background-position: 90% 90%;
+    background-size: 33px;
+    cursor: pointer;
+}
+/*商品列表end*/
+
+
+/*底部菜单start*/
+.container .bottom-menu {
+    width: 100%;
+}
+
+.container .bottom-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .bottom-menu ul li {
+    float: left;
+    width: 20%;
+    height: 66px;
+    background: #5e5d5d;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .bottom-menu ul li i {
+    display: block;
+    width: 3.592em;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.container .bottom-menu ul li span {
+    font-size: .75em;
+}
+
+.container .bottom-menu ul li.home i {
+    background: url(../images/home1.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.hactive i {
+    background: url(../images/home2.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.hactive {
+    background: #ffffff;
+    color: #f888b4;
+}
+
+.container .bottom-menu ul li.classification i {
+    background: url(../images/classification1.png) no-repeat;
+    background-position: center center;
+    background-size: 60% 80%;
+}
+
+.container .bottom-menu ul li.cactive i {
+    background: url(../images/classification2.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.cactive {
+    background: #ffffff;
+    color: #f888b4;
+}
+
+.container .bottom-menu ul li.shopcenter i {
+    background: url(../images/shopcenter1.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.sactive i {
+    background: url(../images/shopcenter2.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.sactive {
+    background: #ffffff;
+    color: #f888b4;
+}
+
+.container .bottom-menu ul li.news i {
+    background: url(../images/news1.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.nactive i {
+    background: url(../images/news2.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.nactive {
+    background: #ffffff;
+    color: #f888b4;
+}
+
+.container .bottom-menu ul li.my i {
+    background: url(../images/my1.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.mactive i {
+    background: url(../images/my2.png) no-repeat;
+    background-position: center center;
+    background-size: 68% 85%;
+}
+
+.container .bottom-menu ul li.mactive {
+    background: #ffffff;
+    color: #f888b4;
+}
+/*底部菜单end*/
+
+
+/*推荐商家*/
+.hex {
+    float: left;
+    margin-right: -14px;
+    margin-bottom: -26px;
+}
+
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: 18px solid #61c45c;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+}
+
+.hex .middle {
+    float: left;
+    width: 24px;
+    height: 56px;
+    background: #61c45c;
+}
+
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: 18px solid #61c45c;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex.even {
+    margin-top: 28px;
+}
+
+.middle span {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+}
+
+.middle span.firstsp {
+    margin-top: 60%;
+}
+
+.hex.upmiddle {
+    margin-left: 50px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.hex.upmiddle .left {
+    border-right: 18px solid #dac45b;
+}
+
+.upmiddle .middle {
+    background: #dac45b;
+}
+
+.hex.upmiddle .right {
+    border-left: 18px solid #dac45b;
+}
+
+.blue .left {
+    border-right: 18px solid #538ed0;
+}
+
+.blue .middle {
+    background: #538ed0;
+}
+
+.blue .right {
+    border-left: 18px solid #538ed0;
+}
+
+.blue .middle span {
+    margin-top: 84%;
+}
+
+.red .left {
+    border-right: 18px solid #f06363;
+}
+
+.red .middle {
+    background: #f06363;
+}
+
+.red .right {
+    border-left: 18px solid #f06363;
+}
+/*推荐商家end*/

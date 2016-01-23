@@ -1,0 +1,36 @@
+@mixin ffk-animate2-fun ($start, $end) {
+    from {
+        transform: rotateY($start);
+        -o-transform: rotateY($start);
+        -ms-transform: rotateY($start);
+        -moz-transform: rotateY($start);
+        -webkit-transform: rotateY($start);
+    }
+    to {
+        transform: rotateY($end);
+        -o-transform: rotateY($end);
+        -ms-transform: rotateY($end);
+        -moz-transform: rotateY($end);
+        -webkit-transform: rotateY($end);
+    }
+}
+
+@keyframes ffk-animate2 {
+    @include ffk-animate2-fun(0deg, 25deg);
+}
+
+@-moz-keyframes ffk-animate2 {
+    @include ffk-animate2-fun(0deg, 25deg);
+}
+
+@-webkit-keyframes ffk-animate2 {
+    @include ffk-animate2-fun(0deg, 25deg);
+}
+
+@-o-keyframes ffk-animate2 {
+    @include ffk-animate2-fun(0deg, 25deg);
+}
+
+@-ms-keyframes ffk-animate2 {
+    @include ffk-animate2-fun(0deg, 25deg);
+}

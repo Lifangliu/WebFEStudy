@@ -1,0 +1,128 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font: 12px arial;
+}
+
+.wrapper{
+	position: relative;
+	min-height: 600px;
+	min-width: 600px;
+	width: 100%;
+	height: 100%;
+}
+
+a{
+	color:#00c;
+}
+
+nav{
+	text-align: right;
+    margin-top: 19px;
+    margin-right: 5px;
+}
+
+.fwb{
+	font-weight:bold;
+}
+
+.fun{
+	color: #000;
+	line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.fun:hover{
+	color: #00c;
+}
+
+.moreb{
+	display:inline-block;
+	width: 60px;
+	height: 23px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	font-size:13px;
+	background-color: #38f;
+	text-decoration:none;
+	margin-left: 19px;
+	margin-right:10px;
+}
+
+.lh a{
+	margin:0 10px;
+}
+.cp,.cp a{
+	color: #666;
+}
+
+.logo{
+	width:270px;
+	height:129px;
+	display:block;
+}
+
+.container{
+	margin-top: 15px;
+	text-align: center;
+}
+
+footer{
+	width:100%;
+	text-align:center;
+	position: absolute;
+	bottom: 44px;
+}
+
+.sform{
+	overflow:hidden;
+	zoom:1;
+	width: 610px;
+	margin:20px auto 0 auto;
+}
+
+.s_ipt{
+	width: 500px;
+	height: 31px;
+	font: 19px/21px arial;
+    padding: 0;
+    float:left;
+    padding-left: 6px;
+}
+
+.s_btn{
+	width: 100px;
+    height: 35px;
+    color: white;
+    border: 0;
+    padding: 0;
+    letter-spacing: 1px;
+	background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    font-size: 15px;
+    float:left;
+}
+
+.s_btn:hover {
+	cursor:pointer;
+	background: #317ef3;
+	border-bottom:1px solid #2868c8;
+	box-shadow: 1px 1px 1px #ccc;
+}
+
+.cp img{
+	display: inline-block;
+    height: 17px;
+    overflow: hidden;
+    position: relative;
+    top: 3px;
+    width: 14px;
+}
